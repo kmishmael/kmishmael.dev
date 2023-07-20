@@ -116,10 +116,11 @@ export default function Stack() {
 
   return (
     <>
-      <div class="mt-28">
-        <p class="text-2xl uppercase font-bold underline">Tech Stack</p>
+      <div id="techstack" class="mt-28 px-4">
+        <p class="text-2xl w-fit relative uppercase font-bold after:content-start after:absolute 
+        after:h-2 after:bg-gray-800 after:w-3/5 after:left-0 after:-bottom-2">Tech Stack</p>
 
-        <div class="bg-gray-100 p-8 mt-4">
+        <div class="py-8 sm:px-8 mt-4">
           <div class="max-w-3xl mx-auto">
             <h2 class="text-2xl font-bold mb-4">Languages</h2>
             <div class="flex flex-wrap mb-8">

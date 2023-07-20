@@ -3,9 +3,9 @@ import { Style } from "solid-start";
 export default function About() {
   return (
     <>
-      <div class="mt-8 flex flex-row items-center">
-        <div class="w-2/4 flex justify-center">
-          <div class="w-[68%] py-2 h-96 overflow-hidden border-l-4 flex justify-center items-center shadow-lg rounded-lg">
+      <div class="mt-8 flex flex-col-reverse sm:flex-row items-center">
+        <div class="w-full max-sm:mt-8   sm:w-2/4 flex justify-center">
+          <div class="w-[68%] py-2 max-sm:px-2 overflow-hidden border-l-4 flex justify-center items-center shadow-lg rounded-lg">
             <img
               class="w-[256px] h-[93%] rounded-lg object-contain"
               src={"./kibet_touch_grass.jpg"}
@@ -14,7 +14,7 @@ export default function About() {
           </div>
         </div>
 
-        <div class="w-2/3 px-5">
+        <div class="w-full sm:w-2/3 px-4">
           <h2 class="about w-fit text-3xl font-semibold" >ABOUT</h2>
           <Style>
             {`
