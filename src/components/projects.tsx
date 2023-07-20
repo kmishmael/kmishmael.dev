@@ -45,7 +45,7 @@ export default function Projects() {
           <>
             <div class="mt-10">
               <p class="text-2xl underline font-bold text-slate-500">
-                0{index}
+                0{index + 1}
               </p>
             </div>
             <div

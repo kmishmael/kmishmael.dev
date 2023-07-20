@@ -52,7 +52,7 @@ export default function Landing() {
           <p class="text-2xl font-bold mt-6">Software Developer</p>
 
           <p class="text-md font-normal mt-6">
-            I am a Front-END Developer, who is passionate about building user
+            I am a Software Developer, who is passionate about building user
             friendly and beautiful applications on the internet
           </p>
 
