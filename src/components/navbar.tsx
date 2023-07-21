@@ -31,6 +31,7 @@ export default function NavBar() {
             </A>
           </li>
         </ul>
+        
 
         <div class="sm:hidden">
           <button class="hover:fill-blue-700" onClick={() => setIsMenu(prev => !prev)}>

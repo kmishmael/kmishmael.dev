@@ -15,26 +15,23 @@ export default function SideBar({
         }`}
       >
         <ul class="flex flex-col gap-2 items-center justify-between text-lg font-bold text-slate-500">
-          <li>
-            <A href="#" class="hover:text-blue-700">
+          
+        <li>
+            <A href="#home" class="hover:text-blue-700">
               Home
             </A>
           </li>
           <li>
-            <A href="#" class="hover:text-blue-700">
+            <A href="#techstack" class="hover:text-blue-700">
               Tech stack
             </A>
           </li>
           <li>
-            <A href="#" class="hover:text-blue-700">
+            <A href="#portfolio" class="hover:text-blue-700">
               Portofolio
             </A>
           </li>
-          <li>
-            <A href="#" class="hover:text-blue-700">
-              Blog
-            </A>
-          </li>
+          
           <li>
             <A href="#" class="hover:text-blue-700">
               Contact

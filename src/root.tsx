@@ -30,7 +30,7 @@ export default function Root() {
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Body class="overflow-x-hidden m-0">
+      <Body class="overflow-x-hidden m-0 min-h-screen flex flex-col justify-between">
         <Suspense>
           <ErrorBoundary>
             <NavBar />
