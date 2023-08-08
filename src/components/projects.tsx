@@ -3,6 +3,22 @@ import { Style, A } from "solid-start";
 export default function Projects() {
   const data = [
     {
+      link: "https://lecmeter.vercel.app/",
+      image: "./lecmeter.png",
+      title: "Rate My Professor",
+      description:
+        "Designed to help students in evaluating their professors and offering valuable feedback through an intuitive interface, enabling students to rate professors based on teaching effectiveness, course engagement, and communication skills. Beyond numerical ratings, students can provide detailed insights, fostering a culture of constructive criticism",
+      tags: ["ReactJS", "NextJS", "MongoDB", "TailwindCSS", "ReactQuery", "Drizzle"],
+    },
+    {
+      link: "https://clemfashions.vercel.app/",
+      image: "./clems.png",
+      title: "Clems Fashion",
+      description:
+        "Clems Fashion is an ecommerce website",
+      tags: ["ReactJS", "NextJS", "MongoDB", "TailwindCSS", "ReactQuery", "Stripe", "Prisma"],
+    },
+    {
       link: "#",
       image: "./project3.png",
       title: "Silicon Voyage Admin Dashboard",
@@ -70,7 +86,7 @@ export default function Projects() {
                   <p class="uppercase font-bold text-lg">{project.title}</p>
                   <p class="text-sm">{project.description}</p>
                   <div>
-                    <ul class="flex gap-2 font-semibold justify-start sm:justify-end">
+                    <ul class="flex gap-2 font-semibold justify-start sm:justify-end w-full flex-wrap p-2">
                       {project.tags.map((img) => (
                         <li class="cursor-pointer hover:text-blue-700 text-sm">
                           {img}
