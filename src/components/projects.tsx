@@ -2,14 +2,7 @@ import { Style, A } from "solid-start";
 
 export default function Projects() {
   const data = [
-    {
-      link: "https://lecmeter.vercel.app/",
-      image: "./lecmeter.png",
-      title: "Rate My Professor",
-      description:
-        "Designed to help students in evaluating their professors and offering valuable feedback through an intuitive interface, enabling students to rate professors based on teaching effectiveness, course engagement, and communication skills. Beyond numerical ratings, students can provide detailed insights, fostering a culture of constructive criticism",
-      tags: ["ReactJS", "NextJS", "MongoDB", "TailwindCSS", "ReactQuery", "Drizzle"],
-    },
+    
     {
       link: "https://clemfashions.vercel.app/",
       image: "./clems.png",
@@ -25,6 +18,14 @@ export default function Projects() {
       description:
         "Powerful tool designed to streamline content management and website administration. It empowers administrators to efficiently handle product specifications, user reviews, and overall website performance, ensuring a seamless and up-to-date user experience.",
       tags: ["ReactJS", "NextJS", "MongoDB", "TailwindCSS", "ReactQuery"],
+    },
+    {
+      link: "https://lecmeter.vercel.app/",
+      image: "./lecmeter.png",
+      title: "Rate My Professor",
+      description:
+        "Designed to help students in evaluating their professors and offering valuable feedback through an intuitive interface, enabling students to rate professors based on teaching effectiveness, course engagement, and communication skills. Beyond numerical ratings, students can provide detailed insights, fostering a culture of constructive criticism",
+      tags: ["ReactJS", "NextJS", "MongoDB", "TailwindCSS", "ReactQuery", "Drizzle"],
     },
     {
       link: "https://siliconvoyage.com",
