@@ -19,7 +19,7 @@ export default function Home() {
             friendly and beautiful applications on the internet" />
     <Meta property="og:title" content="Kibet Ismael - Portfolio"/>
     <Meta property="og:site_name" content="Portofolio" />
-    <Meta property="og:image" content={'./landing-frame.png'} />
+    <Meta property="og:image" content="https://kmishmael.vercel.app/landing-frame.png" />
     <Meta property="og:type" content="website" />
     <Meta name="twitter:card" content="summary_large_image"/>
 
