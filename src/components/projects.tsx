@@ -2,7 +2,14 @@ import { Style, A } from "solid-start";
 
 export default function Projects() {
   const data = [
-    
+    {
+      link: "https://github.com/kmishmael/healthpal",
+      image: "./healthpal.jpg",
+      title: "HealthPal",
+      description:
+        "Your Health and Fitness Tracker",
+      tags: ["Flask", "MYSQL", "ReactJS", "TailwindCSS", "ReactQuery"],
+    },
     {
       link: "https://clemfashions.vercel.app/",
       image: "./clems.png",
@@ -43,13 +50,13 @@ export default function Projects() {
         "Web-based tool that allows users to input their website URLs and validate the associated Twitter cards.",
       tags: ["ReactJS", "TailwindCSS", "Golang", "Serverless Architecture"],
     },
-    {
-      link: "https://joy-4e4c6.web.app/",
-      image: "./joy_project.png",
-      title: "Time countdown",
-      description: "Having fun with Angular.",
-      tags: ["Angular", "SCSS"],
-    },
+    // {
+    //   link: "https://joy-4e4c6.web.app/",
+    //   image: "./joy_project.png",
+    //   title: "Time countdown",
+    //   description: "Having fun with Angular.",
+    //   tags: ["Angular", "SCSS"],
+    // },
   ];
   return (
     <>
