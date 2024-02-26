@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently --kill-others \"gulp css-dev\" \"hugo server --ignoreCache\"",
-    "build": "gulp css-build & hugo --minify"
+    "build": "gulp css-build & hugo --minify",
+    "build-tw": "npx tailwindcss -i ./themes/eco/assets/css/main.css -o ./themes/eco/assets/css/style.css --minify",
+    "watch:tw": "npx tailwindcss -i ./themes/eco/assets/css/main.css -o ./themes/eco/assets/css/style.css --watch"
   },
   "repository": {
     "type": "git",
