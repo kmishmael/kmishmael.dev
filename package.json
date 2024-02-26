@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently --kill-others \"gulp css-dev\" \"hugo server\"",
+    "dev": "concurrently --kill-others \"gulp css-dev\" \"hugo server --ignoreCache\"",
     "build": "gulp css-build & hugo --minify"
   },
   "repository": {
