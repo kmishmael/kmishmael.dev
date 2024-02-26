@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmishmael/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Kibet Ismael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmishmael/portfolio/issues"
+  },
+  "homepage": "https://github.com/kmishmael/portfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.0.1",
+    "tailwindcss": "^3.4.1"
+  }
+}
