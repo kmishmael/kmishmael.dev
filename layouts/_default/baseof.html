@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ block "title" . }}{{ .Site.Title }} {{ end }}</title>
+    <meta name="description" content="{{ .Description }}" />
+
+    {{/* styles */}} {{ $options := dict "config" "assets/css/postcss.config.js"
+    }} {{ $styles := resources.Get "css/styles.css" }} {{ $styles = $styles |
+    resources.PostCSS $options }} {{ if hugo.IsProduction }} {{ $styles =
+    $styles | minify | fingerprint | resources.PostProcess }} {{ end }}
+    <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+  </head>
+  <body class="bg-blue-500">
+    {{ block "main" . }} {{ end }} {{ block "footer" . }} {{ end }}
+  </body>
+</html>
