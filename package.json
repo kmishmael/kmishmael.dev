@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently --kill-others \"gulp css-dev\" \"hugo server --ignoreCache\"",
-    "build": "gulp css-build & hugo --minify",
+    "build": "gulp css-build & hugo version & hugo --minify",
     "build:tw": "npx tailwindcss -i ./assets/css/styles.css -o ./static/styles.css --minify",
     "watch:tw": "npx tailwindcss -i ./assets/css/styles.css -o ./static/styles.css --watch"
   },
