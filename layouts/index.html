@@ -1,0 +1,29 @@
+{{ define "main" }}
+<meta name="title" content="Kibet Ismael - Portfolio" />
+<meta
+  name="description"
+  content="Software Developer, who is passionate about building user
+            friendly and beautiful applications on the internet"
+/>
+<meta property="og:title" content="Kibet Ismael - Portfolio" />
+<meta
+  property="og:description"
+  content="Software Developer, who is passionate about building user
+            friendly and beautiful applications on the internet"
+/>
+<meta property="og:title" content="Kibet Ismael - Portfolio" />
+<meta property="og:site_name" content="Portofolio" />
+<meta
+  property="og:image"
+  content="https://kmishmael.vercel.app/landing-frame.png"
+/>
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+
+{{ partial "navbar.html" . }}
+<main aria-role="main" class="mx-2 sm:mx-10 md:mx-20 py-10">
+  {{ partial "landing.html" . }} {{ partial
+  "stack.html" . }} {{ partial "about.html" . }} {{ partial "projects.html" . }}
+</main>
+{{ end }}
+

@@ -1,0 +1,73 @@
+<div
+  class="flex flex-row justify-between h-16 border shadow-md items-center px-12"
+>
+  <div>
+    <p class="uppercase font-bold text-2xl text-gray-500">Kibet Ismael</p>
+  </div>
+  <ul class="hidden sm:flex flex-row justify-between text-xl w-1/2">
+    <li>
+      <a href="#home" class="hover:text-blue-700"> Home </a>
+    </li>
+    <li>
+      <a href="#techstack" class="hover:text-blue-700"> Tech stack </a>
+    </li>
+    <li>
+      <a href="#portfolio" class="hover:text-blue-700"> Portofolio </a>
+    </li>
+
+    <li>
+      <a href="#" class="hover:text-blue-700"> Contact </a>
+    </li>
+  </ul>
+
+  <div class="sm:hidden">
+    <button id="side-menu-button" class="hover:fill-blue-700">
+      <svg
+        class="h-6 w-6"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<div
+  id="side-menu"
+  class="toggle-menu absolute top-20 right-0 bg-white transition-[opacity] ease-in duration-300 shadow z-50 py-4 w-48"
+>
+  <ul
+    class="flex flex-col gap-2 items-center justify-between text-lg font-bold text-slate-500"
+  >
+    <li>
+      <a href="#home" class="hover:text-blue-700">Home</a>
+    </li>
+    <li>
+      <a href="#techstack" class="hover:text-blue-700">Tech stack</a>
+    </li>
+    <li>
+      <a href="#portfolio" class="hover:text-blue-700">Portfolio</a>
+    </li>
+
+    <li>
+      <a href="#" class="hover:text-blue-700">Contact</a>
+    </li>
+  </ul>
+</div>
+
+<style>
+  .toggle-menu {
+    opacity: 0;
+    scale: 0;
+  }
+</style>
+
+<script>
+  let button = document.getElementById("side-menu-button");
+  let menu = document.getElementById("side-menu");
+
+  button.addEventListener("click", () => {
+    menu.classList.toggle("toggle-menu");
+  });
+</script>

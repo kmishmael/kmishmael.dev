@@ -1,0 +1,75 @@
+{{ $projects := .Site.Data.projects }}
+
+<div id="portfolio" class="mt-12">
+  <h2 class="project w-fit text-2xl font-semibold uppercase">Portfolio</h2>
+
+  {{ range $index, $Project := $projects }}
+
+  <div class="mt-10">
+    <p class="text-2xl underline font-bold text-slate-500">0{{add $index 1}}</p>
+  </div>
+  <div
+    class="flex flex-col sm:flex-row flex-wrap mt-4 sm:mt-8 justify-between {{ if mod (add $index 1) 2 }}sm:flex-row-reverse{{ end }}"
+  >
+    <div class="w-full sm:w-3/5 mb-4">
+      <div class="flex flex-col relative rounded overflow-hidden shadow-lg">
+        <a
+          href="{{$Project.link}}"
+          class="absolute w-full rounded bg-black transition-all duration-200 ease-in bg-opacity-30 hover:bg-opacity-0 h-full"
+        ></a>
+        <a href="{{$Project.link}}">
+          {{ $image := resources.Get $Project.image }}
+          <img class="object-fit rounded" src="{{$image.Permalink}}" />
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col w-full sm:w-2/5 sm:px-4 text-left sm:text-right justify-center gap-3"
+    >
+      <div class="h-fit bg-navy p-4 text-slate-400 rounded-md">
+        <p class="uppercase font-bold text-lg">{{$Project.title}}</p>
+        <p class="text-sm">{{$Project.description}}</p>
+        <div>
+          <ul
+            class="flex gap-2 font-semibold justify-start sm:justify-end w-full flex-wrap p-2"
+          >
+            {{ range $Project.tags }}
+            <li class="cursor-pointer hover:text-blue-700 text-sm">{{.}}</li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="w-full pr-3 mt-3">
+          <a href="{{$Project.link}}">
+            <svg
+              class="h-6 w-6 fill-slate-300 transition-[fill] duration-200 ease-in hover:fill-neon ml-auto"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{ end }}
+</div>
+
+<style>
+  .project {
+    position: relative;
+  }
+  .project::after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 60%;
+    bottom: -10px;
+    left: 0;
+    background-color: black;
+  }
+</style>
