@@ -5,7 +5,7 @@
     <title>{{ block "title" . }}{{ .Site.Title }} {{ end }}</title>
     <meta name="description" content="{{ .Description }}" />
 
-    {{/* styles */}} {{ $options := dict "config" "assets/css/postcss.config.js"
+    {{ $options := dict "config" "assets/css/postcss.config.js"
     }}
     <link href="styles.css" rel="stylesheet" />
   </head>
