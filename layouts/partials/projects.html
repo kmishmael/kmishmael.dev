@@ -1,37 +1,9 @@
-const data = [ { link: "https://github.com/kmishmael/healthpal", image:
-"./healthpal.jpg", title: "HealthPal", description: "Your Health and Fitness
-Tracker", tags: ["Flask", "MYSQL", "ReactJS", "TailwindCSS", "ReactQuery"], }, {
-link: "https://clemfashions.vercel.app/", image: "./clems.png", title: "Clems
-Fashion", description: "Clems Fashion is an ecommerce website", tags:
-["ReactJS", "NextJS", "MongoDB", "TailwindCSS", "ReactQuery", "Stripe",
-"Prisma"], }, { link: "#", image: "./project3.png", title: "Silicon Voyage Admin
-Dashboard", description: "Powerful tool designed to streamline content
-management and website administration. It empowers administrators to efficiently
-handle product specifications, user reviews, and overall website performance,
-ensuring a seamless and up-to-date user experience.", tags: ["ReactJS",
-"NextJS", "MongoDB", "TailwindCSS", "ReactQuery"], }, { link:
-"https://lecmeter.vercel.app/", image: "./lecmeter.png", title: "Rate My
-Professor", description: "Designed to help students in evaluating their
-professors and offering valuable feedback through an intuitive interface,
-enabling students to rate professors based on teaching effectiveness, course
-engagement, and communication skills. Beyond numerical ratings, students can
-provide detailed insights, fostering a culture of constructive criticism", tags:
-["ReactJS", "NextJS", "MongoDB", "TailwindCSS", "ReactQuery", "Drizzle"], }, {
-link: "https://siliconvoyage.com", image: "./project2.png", title: "Silicon
-Voyage", description: "A technology website that archives specifications for
-various lines of products in the Tech sector i.e CPUs, GPUs, and Smartphones",
-tags: ["ReactJS", "NextJS", "MongoDB", "TailwindCSS", "ReactQuery"], }, { link:
-"https://sc-validator-kmishmael.vercel.app/twitter-validator", image:
-"./sc_validator.png", title: "Twitter card validator", description: "Web-based
-tool that allows users to input their website URLs and validate the associated
-Twitter cards.", tags: ["ReactJS", "TailwindCSS", "Golang", "Serverless
-Architecture"], }, // { // link: "https://joy-4e4c6.web.app/", // image:
-"./joy_project.png", // title: "Time countdown", // description: "Having fun
-with Angular.", // tags: ["Angular", "SCSS"], // }, ];
+{{ $projects := .Site.Data.projects }}
+
 <div id="portfolio" class="mt-12">
   <h2 class="project w-fit text-2xl font-semibold uppercase">Portfolio</h2>
 
-  {{ range $index, $Project := .Projects }}
+  {{ range $index, $Project := $projects }}
 
   <div class="mt-10">
     <p class="text-2xl underline font-bold text-slate-500">0{{add $index 1}}</p>
@@ -46,7 +18,8 @@ with Angular.", // tags: ["Angular", "SCSS"], // }, ];
           class="absolute w-full rounded bg-black transition-all duration-200 ease-in bg-opacity-30 hover:bg-opacity-0 h-full"
         ></a>
         <a href="{{$Project.link}}">
-          <img class="object-fit rounded" src="{{$Project.image}}" />
+          {{ $image := resources.Get $Project.image }}
+          <img class="object-fit rounded" src="{{$image.Permalink}}" />
         </a>
       </div>
     </div>

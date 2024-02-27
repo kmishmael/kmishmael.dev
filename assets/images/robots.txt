@@ -1,0 +1,3 @@
+# Hey Robots 👋, be nice
+User-agent: *
+Allow: /
