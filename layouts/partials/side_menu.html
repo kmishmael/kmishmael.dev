@@ -1,40 +1,29 @@
 <div
-  class="{`absolute"
-  top-20
-  right-0
-  bg-white
-  transition-[opacity]
-  ease-in
-  duration-300
-  shadow
-  z-50
-  py-4
-  w-48
-  ${
-  isMenu()
-  ?
-  `opacity-100
-  scale-100`
-  :
-  `opacity-0
-  scale-0`
-  }`}
+  id="side-menu"
+  class="toggle-menu absolute top-20 right-0 bg-white transition-[opacity] ease-in duration-300 shadow z-50 py-4 w-48"
 >
   <ul
     class="flex flex-col gap-2 items-center justify-between text-lg font-bold text-slate-500"
   >
     <li>
-      <a href="#home" class="hover:text-blue-700"> Home </a>
+      <a href="#home" class="hover:text-blue-700">Home</a>
     </li>
     <li>
-      <a href="#techstack" class="hover:text-blue-700"> Tech stack </a>
+      <a href="#techstack" class="hover:text-blue-700">Tech stack</a>
     </li>
     <li>
-      <a href="#portfolio" class="hover:text-blue-700"> Portofolio </a>
+      <a href="#portfolio" class="hover:text-blue-700">Portfolio</a>
     </li>
 
     <li>
-      <a href="#" class="hover:text-blue-700"> Contact </a>
+      <a href="#" class="hover:text-blue-700">Contact</a>
     </li>
   </ul>
 </div>
+
+<style>
+  .toggle-menu {
+    opacity: 0;
+    scale: 0;
+  }
+</style>

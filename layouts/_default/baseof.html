@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <title>{{ block "title" . }}{{ .Site.Title }} {{ end }}</title>
@@ -10,6 +10,6 @@
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body class="">
-    {{ block "main" . }} {{ end }} {{ block "footer" . }} {{ end }}
+    {{ block "main" . }} {{ end }} {{ partial "footer.html" . }}
   </body>
 </html>

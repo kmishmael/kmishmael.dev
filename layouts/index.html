@@ -20,9 +20,10 @@
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 
-<main aria-role="main">
-  {{ partial "navbar.html" . }} {{ partial "landing.html" . }} {{ partial
+{{ partial "navbar.html" . }}
+<main aria-role="main" class="mx-2 sm:mx-10 md:mx-20 py-10">
+  {{ partial "landing.html" . }} {{ partial
   "stack.html" . }} {{ partial "about.html" . }} {{ partial "projects.html" . }}
-  {{ partial "side_menu.html" . }}
 </main>
 {{ end }}
+
