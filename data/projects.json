@@ -1,5 +1,12 @@
 [
   {
+    "link": "https://github.com/kmishmael/sensorgrove",
+    "image": "images/sensorgrove.png",
+    "title": "SensorGrove",
+    "description": "An Ecommerce platform.",
+    "tags": ["NextJS", "TailwindCS", "Typescript", "Go", "Gin", "Redux", "Postgres"]
+  },
+  {
     "link": "https://github.com/kmishmael/healthpal",
     "image": "images/healthpal.jpg",
     "title": "HealthPal",
