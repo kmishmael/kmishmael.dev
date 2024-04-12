@@ -1,3 +1,9 @@
+---
+title: "My Experience at ALX"
+slug: "my-alx-experience"
+date: "2024-04-12T12:31:49+03:00"
+---
+
 # My Experience at ALX (And an excuse to talk about other things as well)
 
 On the tipping end of 2022, I finally got the courage to apply for ALX Africa Software Engineering

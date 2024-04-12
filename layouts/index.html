@@ -20,8 +20,16 @@
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 
-
 <div>
-  
+  {{ partial "welcome.html" . }}
+  <div class="py-2">
+    <p>Featured</p>
+  </div>
+
+  <div class="flex flex-col gap-2">
+    {{ range (where .Site.RegularPages "Type" "blog" | first 6) }}
+    <h3><a href="{{ .RelPermalink}}" class="title">{{ .Title }}</a></h3>
+    {{ end }}
+  </div>
 </div>
 {{ end }}
