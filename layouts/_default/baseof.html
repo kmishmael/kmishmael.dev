@@ -5,11 +5,13 @@
     <title>{{ block "title" . }}{{ .Site.Title }} {{ end }}</title>
     <meta name="description" content="{{ .Description }}" />
 
-    {{ $options := dict "config" "assets/css/postcss.config.js"
-    }}
-    <link href="styles.css" rel="stylesheet" />
+    {{ $options := dict "config" "assets/css/postcss.config.js" }}
+    <link href="/styles.css" rel="stylesheet" />
   </head>
   <body class="">
-    {{ block "main" . }} {{ end }}
+    {{ partial "navbar.html" . }}
+    <main aria-role="main" class="mx-2 sm:mx-10 md:mx-20 py-10">
+      {{ block "main" . }} {{ end }}
+    </main>
   </body>
 </html>

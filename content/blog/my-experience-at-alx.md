@@ -19,3 +19,7 @@ Bootcamps have been around all along. It's only that we have changed the name. I
 
 ## warming up
 Every once in while, limiting to within Kenya in this theory, there is an opportunity so good you have to be part of, lest be left behind. A while back, while I still discovering the intricacies of programming, there was a program by Andela. The engineers who got to be part of this project are some of the best developers I look up to right now. I believed ALX was the Andela of my time and I knew I had to join, it was also a scholarship, which was not an issue for me since as I said earlier, I won't pay to be taught something that is available.
+
+## Experience
+ALX was the best thing that happened to me. I immediately learnt that actually, I did not know a lot. My first introduction was Linux. I had used linux very few times with `wsl`. It was my first full on experience with Linux.
+Having to learn the C language was amazing. I got to learn the low levels intricacies between the operating system and the program. I had some experience with C++ so this was a smooth sail for me.
