@@ -1,36 +1,17 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "concurrently --kill-others \"gulp css-dev\" \"hugo server --ignoreCache\"",
-    "build": "gulp css-build & hugo version & hugo --minify",
-    "build:tw": "npx tailwindcss -i ./assets/css/styles.css -o ./static/styles.css --minify",
-    "watch:tw": "npx tailwindcss -i ./assets/css/styles.css -o ./static/styles.css --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kmishmael/portfolio.git"
-  },
-  "keywords": [
-    "portfolio"
-  ],
-  "author": "Kibet Ismael",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kmishmael/portfolio/issues"
-  },
-  "homepage": "https://github.com/kmishmael/portfolio#readme",
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.5.9",
-    "autoprefixer": "^10.4.17",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-concat-css": "^3.1.0",
-    "gulp-cssnano": "^2.1.3",
-    "gulp-postcss": "^9.0.0",
-    "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1"
+    "name": "blog-tutorial",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+      "dev": "astro dev",
+      "start": "astro dev",
+      "build": "astro check && astro build",
+      "preview": "astro preview",
+      "astro": "astro"
+    },
+    "dependencies": {
+      "astro": "^4.6.1",
+      "@astrojs/check": "^0.5.10",
+      "typescript": "^5.4.5"
+    }
   }
-}
