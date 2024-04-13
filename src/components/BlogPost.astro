@@ -1,0 +1,30 @@
+---
+const { title, url, pubDate, tags } = Astro.props;
+// toString().slice(0,10)
+---
+
+<li>
+  <div class="flex flex-col gap-2">
+    <a class="hover:underline underline-offset-4 font-semibold" href={url}>{title}</a>
+    <div class="flex flex-row gap-3">
+      <p class="font-semibold text-normal">
+        {
+          new Date(pubDate).toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "2-digit",
+          })
+        }
+      </p>
+      <div class="flex flex-row gap-4">
+        {
+          tags && tags.map((tag: any) => (
+            <p class="tag px-2 rounded-sm hover:bg-neutral-200">
+              <a href={`/tags/${tag}`}>#{tag}</a>
+            </p>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</li>

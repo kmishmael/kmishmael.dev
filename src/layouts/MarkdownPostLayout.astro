@@ -1,0 +1,80 @@
+---
+import TableOfContents from "../components/TableOfContents.astro";
+import { SEO } from "astro-seo";
+
+import BaseLayout from "./BaseLayout.astro";
+const { frontmatter, headings } = Astro.props;
+---
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+  .tag {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+</style>
+
+<BaseLayout pageTitle=`${frontmatter.title} | Kibet Ismael`>
+  <SEO
+  title=`${frontmatter.title} | Kibet Ismael`
+  description={frontmatter.description}
+  openGraph={{
+    basic: {
+      title: `${frontmatter.title} | Kibet Ismael`,
+      type: "article",
+      image: "https://kmishmael.tech/images/landing-frame.png",
+    }
+  }}
+  twitter={{
+    creator: "@kmishmael20"
+  }}
+  />
+  <div class="blob w-full h-[650px] border absolute top-0 left-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-b from-teal-200 to-white"></div>
+  <div class="flex flex-row gap-4">
+    {
+      frontmatter.tags.map((tag: any) => (
+        <p class="tag">
+          <a href={`/tags/${tag}`}>#{tag}</a>
+        </p>
+      ))
+    }
+  </div>
+  <br />
+  <h2 class="text-xl sm:text-3xl md:text-6xl font-semibold">
+    {frontmatter.title}
+  </h2>
+  <br />
+  <p class="font-semibold text-normal">
+    {
+      new Date(frontmatter.pubDate).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "2-digit",
+      })
+    }
+  </p>
+  <br />
+
+  <div class="grid grid-cols-12 gap-3">
+    <div class="col-span-9 prose-slate prose:text-red-600 prose-md lg:prose-xl dark:prose-invert prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-semibold prose-a:text-blue-600 dark:prose-a:text-blue-400">
+      <slot />
+    </div>
+    <div class="col-span-3 p-1">
+      <p>Written by</p>
+      <div class="flex flex-row py-2 gap-4 items-center">
+        <div class="h-10 w-10 rounded-full overflow-hidden border">
+        <img src="/images/avatar.avif" class="object-contain" alt="image of author" />
+        </div>
+        <p class="font-semibold">Kibet Ismael</p>
+      </div>
+      <br />
+      <div>
+        <p>In this post</p>
+        <div class="ml-3 py-1">
+          <TableOfContents headings={headings} />
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

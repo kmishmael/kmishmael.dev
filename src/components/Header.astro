@@ -2,9 +2,8 @@
 import Hamburger from './Hamburger.astro';
 import Navigation from './Navigation.astro';
 ---
-<header>
-  <nav>
-    <Hamburger />
+<header class="h-10 relative">
+  <nav class="fixed top-0 z-[100] bg-transparent backdrop:filter w-full" style="backdrop-filter: blur(16px);">
     <Navigation />
   </nav>
 </header>

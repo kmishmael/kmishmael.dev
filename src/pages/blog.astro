@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogPost from "../components/BlogPost.astro";
+const allPosts = await Astro.glob("../pages/blog/*.md");
+const pageTitle = "Blog | Kibet Ismael";
+import { SEO } from "astro-seo";
+
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <SEO
+    title="Articles"
+    description="Kibet Ismael | Software Developer and Engineer."
+    openGraph={{
+      basic: {
+        title: "Kibet Ismael",
+        type: "website",
+        image: "https://kmishmael.tech/images/landing-frame.png",
+      }
+    }}
+    twitter={{
+      creator: "@kmishmael20"
+    }}
+    />
+    <br />
+    <div class="py-2 flex gap-4 items-center">
+        <span class="h-6 w-5 bg-neutral-800"></span>
+        <h2 class="font-semibold text-3xl m-0">ARTICLES</h2>
+    </div>
+    <br />
+    <br />
+  <ul>
+    {
+      allPosts.map((post) => (
+        <BlogPost url={post.url} pubDate={post.frontmatter.pubDate} tags={post.frontmatter.tags} title={post.frontmatter.title} />
+      ))
+    }
+  </ul>
+</BaseLayout>

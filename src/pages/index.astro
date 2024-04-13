@@ -1,8 +1,62 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const pageTitle = "Home Page";
+import Introduction from "../components/Introduction.astro";
+import BlogPost from "../components/BlogPost.astro";
+const allPosts = await Astro.glob("../pages/blog/*.md");
+import { SEO } from "astro-seo";
+
+
+const pageTitle = "Home | Kibet Ismael";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitles</h2>
+  <SEO
+  title="Kibet Ismael"
+  description="Kibet Ismael | Software Developer and Engineer."
+  openGraph={{
+    basic: {
+      title: "Kibet Ismael",
+      type: "website",
+      image: "https://kmishmael.tech/images/landing-frame.png",
+    }
+  }}
+  twitter={{
+    creator: "@kmishmael20"
+  }}
+  />
+  <br />
+  <Introduction />
+  <br />
+  <br />
+  <div class="grid grid-cols-12 gap-4">
+    <div class="col-span-8">
+      <div class="py-2 flex gap-4 items-center">
+        <span class="h-6 w-5 bg-neutral-800"></span>
+        <h2 class="font-semibold text-lg m-0">ARTICLES</h2>
+      </div>
+      <br />
+
+      <ul>
+      {allPosts.slice(0, 6).map((post: any) => (
+        <BlogPost url={post.url} pubDate={post.frontmatter.pubDate} tags={post.frontmatter.tags} title={post.frontmatter.title} />
+      ))}
+      </ul>
+      <br />
+      <div>
+        <a class="text-lg hover:underline" href="/blog">Show all...</a>
+      </div>
+
+    </div>
+    <div class="col-span-4">
+      <div class="py-2 flex gap-4 items-center">
+        <span class="h-4 w-3 bg-neutral-800"></span>
+        <h2 class="font-semibold text-lg m-0">PROJECTS</h2>
+      </div>
+      <br />
+      <ul class="flex flex-col gap-1">
+        <li><a class="font-semibold hover:underline underline-offset-4"href="https://github.com/kmishmael/sensorgrove">SensorGrove</a></li>
+        <li><a class="font-semibold hover:underline underline-offset-4"href="https://github.com/kmishmael/healthpal">HealthPal</a></li>
+      </ul>
+    </div>
+  </div>
 </BaseLayout>
