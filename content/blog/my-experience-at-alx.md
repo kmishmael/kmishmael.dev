@@ -1,4 +1,8 @@
-# My Experience at ALX (And an excuse to talk about other things as well)
+---
+title: "My Experience at ALX (And an excuse to talk about other things as well)"
+slug: "my-alx-experience"
+date: "2024-04-12T12:31:49+03:00"
+---
 
 On the tipping end of 2022, I finally got the courage to apply for ALX Africa Software Engineering
 course. On 5th Dec, 2022, I got the acceptable letter and was scheduled to start on 23rd January 2023.
