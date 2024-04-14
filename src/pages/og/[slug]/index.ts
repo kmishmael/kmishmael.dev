@@ -103,12 +103,7 @@ export async function getStaticPaths() {
             params: {slug: b.url.split('/')[b.url.split('/').length - 1]},
             props: b,
         }
-        console.log(post)
         posts.push(post)
     }
-    // return blogPosts.map((post) => ({
-    //     params: { slug: post.slug },
-    //     props: { post },
-    // }));
     return posts
 }
