@@ -64,11 +64,10 @@ export async function GET({ params, props }) {
                     },
                 },
             ],
-            tw: 'w-full h-full flex items-center relative bg-contain',
+            tw: 'w-full h-full flex items-center relative',
             style: {
                 fontFamily: 'DM Sans Regular',
                 backgroundImage: 'url(https://kmishmael.tech/images/og-background.png)',
-                backgroundSize: 'contain',
             },
         },
     };
