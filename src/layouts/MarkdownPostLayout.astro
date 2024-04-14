@@ -30,8 +30,9 @@ const { frontmatter, headings } = Astro.props;
     creator: "@kmishmael20"
   }}
   />
-  
-  <div class="blob w-full h-[650px] border absolute top-0 left-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-b from-teal-200 to-white"></div>
+
+  <div class="blob w-full h-[510px] md:h-[650px] absolute top-0 left-0 -z-10 bg-opacity-60 bg-gradient-to-b from-teal-200 to-white"></div>
+  <br />
   <div class="flex flex-row gap-4">
     {
       frontmatter.tags.map((tag: any) => (
@@ -42,7 +43,7 @@ const { frontmatter, headings } = Astro.props;
     }
   </div>
   <br />
-  <h2 class="text-xl sm:text-3xl md:text-6xl font-semibold">
+  <h2 class="text-4xl md:text-6xl font-semibold">
     {frontmatter.title}
   </h2>
   <br />
@@ -57,11 +58,11 @@ const { frontmatter, headings } = Astro.props;
   </p>
   <br />
 
-  <div class="grid grid-cols-12 gap-3">
-    <div class="col-span-9 prose-slate prose:text-red-600 prose-md lg:prose-xl dark:prose-invert prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-semibold prose-a:text-blue-600 dark:prose-a:text-blue-400">
+  <div class="grid grid-cols-12 gap-3 flex-col-reverse">
+    <div class="md:col-span-9 order-last md:order-first col-span-12 prose-slate prose-lg lg:prose-xl dark:prose-invert prose-headings:font-heading prose-headings:leading-relaxed max-sm:prose-headings:mb-4 max-sm:prose-headings:my-8 max-sm:prose-headings:text-3xl prose-headings:tracking-tighter prose-headings:font-semibold prose-a:text-blue-600 dark:prose-a:text-blue-400">
       <slot />
     </div>
-    <div class="col-span-3 p-1">
+    <div class="md:col-span-3 col-span-12 p-1">
       <p>Written by</p>
       <div class="flex flex-row py-2 gap-4 items-center">
         <div class="h-10 w-10 rounded-full overflow-hidden border">
@@ -70,7 +71,7 @@ const { frontmatter, headings } = Astro.props;
         <p class="font-semibold">Kibet Ismael</p>
       </div>
       <br />
-      <div>
+      <div class="hidden md:static">
         <p>In this post</p>
         <div class="ml-3 py-1">
           <TableOfContents headings={headings} />

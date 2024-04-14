@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+
 const { pageTitle } = Astro.props;
 ---
 
@@ -18,7 +19,7 @@ const { pageTitle } = Astro.props;
     
     <br />
     <div
-      class="px-3 sm:px-20 md:px-36 leading-[1.5] mx-auto flex flex-col min-h-screen h-full justify-between"
+      class="px-4 sm:px-20 md:px-36 leading-[1.5] mx-auto flex flex-col min-h-screen h-full justify-between"
     >
       <div>
         <slot />
