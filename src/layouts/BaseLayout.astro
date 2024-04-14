@@ -2,7 +2,15 @@
 import Header from "../components/Header.astro";
 import "../styles/global.css";
 
-const { pageTitle } = Astro.props;
+const {
+  pageTitle,
+  sTitle,
+  sDescrition,
+  sType = "website",
+  sImage = "https://kmishmael.tech/images/landing-frame.png",
+  sCreator = "@kmishmael20",
+  sCard = "summary_large_image",
+} = Astro.props;
 ---
 
 <html lang="en">
@@ -13,10 +21,25 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/images/favicon.ico" />
     <title>{pageTitle}</title>
+
+    <link rel="canonical" href={Astro.url} />
+    <meta name="description" content={sDescrition} /><meta
+      name="robots"
+      content="index, follow"
+    /><meta property="og:title" content={sTitle} /><meta
+      property="og:type"
+      content="article"
+    /><meta property="og:image" content={sImage} /><meta
+      property="og:url"
+      content={Astro.url}
+    /><meta name="twitter:card" content={sCard} /><meta
+      name="twitter:creator"
+      content={sCreator}
+    />
   </head>
   <body class="">
     <Header />
-    
+
     <br />
     <div
       class="px-4 sm:px-20 md:px-36 leading-[1.5] mx-auto flex flex-col min-h-screen h-full justify-between"
