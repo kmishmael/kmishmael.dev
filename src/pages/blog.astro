@@ -4,36 +4,25 @@ import BlogPost from "../components/BlogPost.astro";
 const allPosts = await Astro.glob("../pages/blog/*.md");
 const pageTitle = "Blog | Kibet Ismael";
 import { SEO } from "astro-seo";
-
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-    <SEO
-    title="Articles"
-    description="Kibet Ismael | Software Developer and Engineer."
-    openGraph={{
-      basic: {
-        title: "Kibet Ismael",
-        type: "website",
-        image: "https://kmishmael.tech/images/landing-frame.png",
-      }
-    }}
-    twitter={{
-      creator: "@kmishmael20",
-      card: 'summary_large_image'
-    }}
-    />
-    <br />
-    <div class="py-2 flex gap-4 items-center">
-        <span class="h-6 w-5 bg-primary"></span>
-        <h2 class="font-semibold text-3xl m-0 text-primary">ARTICLES</h2>
-    </div>
-    <br />
-    <br />
+<BaseLayout pageTitle={pageTitle} sTitle="Kibet Ismael" sDescription="Kibet Ismael | Software Developer and Engineer.">
+  <br />
+  <div class="py-2 flex gap-4 items-center">
+    <span class="h-6 w-5 bg-primary"></span>
+    <h2 class="font-semibold text-3xl m-0 text-primary">ARTICLES</h2>
+  </div>
+  <br />
+  <br />
   <ul>
     {
       allPosts.map((post) => (
-        <BlogPost url={post.url} pubDate={post.frontmatter.pubDate} tags={post.frontmatter.tags} title={post.frontmatter.title} />
+        <BlogPost
+          url={post.url}
+          pubDate={post.frontmatter.pubDate}
+          tags={post.frontmatter.tags}
+          title={post.frontmatter.title}
+        />
       ))
     }
   </ul>

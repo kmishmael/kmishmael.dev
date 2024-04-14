@@ -15,23 +15,7 @@ const { frontmatter, headings, url } = Astro.props;
   }
 </style>
 
-<BaseLayout pageTitle=`${frontmatter.title} | Kibet Ismael`>
-  <SEO
-  title=`${frontmatter.title} | Kibet Ismael`
-  description={frontmatter.description}
-  openGraph={{
-    basic: {
-      title: `${frontmatter.title} | Kibet Ismael`,
-      type: "article",
-      image: `https://kmishmael.tech/og/${url.split('/')[url.split('/').length - 1]}.png`,
-    }
-  }}
-  twitter={{
-    creator: "@kmishmael20",
-    card: 'summary_large_image'
-  }}
-  />
-
+<BaseLayout pageTitle=`${frontmatter.title} | Kibet Ismael` sImage=`https://kmishmael.tech/og/${url.split('/')[url.split('/').length - 1]}.png` sType="article" sDescription={frontmatter.description} sTitle=`${frontmatter.title} | Kibet Ismael`>
   <div class="blob w-full h-[510px] md:h-[650px] absolute top-0 left-0 -z-10 bg-opacity-60 bg-gradient-to-b from-teal-200 to-white"></div>
   <br />
   <div class="flex flex-row gap-4">
