@@ -1,5 +1,3 @@
-import * as jsdom from "jsdom";
-const { JSDOM } = jsdom;
 import fs from 'fs';
 import path from 'path';
 import { ImageResponse } from '@vercel/og';
