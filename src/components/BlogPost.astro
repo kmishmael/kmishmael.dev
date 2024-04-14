@@ -5,9 +5,9 @@ const { title, url, pubDate, tags } = Astro.props;
 
 <li>
   <div class="flex flex-col gap-2">
-    <a class="hover:underline underline-offset-4 font-semibold" href={url}>{title}</a>
+    <a class="font-semibold link-underline hover:text-primaryw-fit" href={url}>{title}</a>
     <div class="flex flex-row gap-3">
-      <p class="font-semibold text-normal">
+      <p class="font-medium text-sm text-neutral-700">
         {
           new Date(pubDate).toLocaleDateString("en-US", {
             year: "numeric",
@@ -19,8 +19,8 @@ const { title, url, pubDate, tags } = Astro.props;
       <div class="flex flex-row gap-4">
         {
           tags && tags.map((tag: any) => (
-            <p class="tag px-2 rounded-sm hover:bg-neutral-200">
-              <a href={`/tags/${tag}`}>#{tag}</a>
+            <p class="tag px-2 bg-secondary text-primary duration-150 ease-in transition-colors hover:bg-primary hover:text-white rounded-sm">
+              <a class="m-0 p-0" href={`/tags/${tag}`}>#{tag}</a>
             </p>
           ))
         }

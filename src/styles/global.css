@@ -1,0 +1,23 @@
+.link-underline {
+  transition: color 0.25s ease-in;
+  display: inline-block;
+  position: relative;
+}
+
+.link-underline:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -1px;
+  left: 0;
+  transform-origin: bottom left right;
+  transition: transform 0.25s ease-out;
+  @apply bg-primary
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}

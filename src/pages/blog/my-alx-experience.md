@@ -4,7 +4,7 @@ title: "My Experience at ALX (And an excuse to talk about other things as well)"
 description: "My Experience at ALX 1 year Software Engineering program"
 author: "Kibet Ismael"
 pubDate: 2024-04-14
-tags: ["personal", "story time"]
+tags: ["personal", "storytime"]
 ---
 
 On the tipping end of 2022, I finally got the courage to apply for ALX Africa Software Engineering
