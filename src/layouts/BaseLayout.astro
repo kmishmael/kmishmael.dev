@@ -5,7 +5,7 @@ import "../styles/global.css";
 const {
   pageTitle,
   sTitle,
-  sDescrition,
+  sDescription,
   sType = "website",
   sImage = "https://kmishmael.tech/images/landing-frame.png",
   sCreator = "@kmishmael20",
@@ -22,16 +22,18 @@ const {
     <link rel="icon" type="image/svg+xml" href="/images/favicon.ico" />
     <title>{pageTitle}</title>
 
-    <link rel="canonical" href={Astro.url} />
-    <meta name="description" content={sDescrition} /><meta
+    <link rel="canonical" href={Astro.url.href} />
+    <meta name="description" content={sDescription} /><meta
       name="robots"
       content="index, follow"
-    /><meta property="og:title" content={sTitle} /><meta
+    /><meta property="og:title" content={sTitle} />
+    <meta property="og:description" content={sDescription} /><meta
+    <meta
       property="og:type"
       content="article"
     /><meta property="og:image" content={sImage} /><meta
       property="og:url"
-      content={Astro.url}
+      content={Astro.url.href}
     /><meta name="twitter:card" content={sCard} /><meta
       name="twitter:creator"
       content={sCreator}
