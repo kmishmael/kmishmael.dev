@@ -11,6 +11,10 @@ const {
   sCreator = "@kmishmael20",
   sCard = "summary_large_image",
 } = Astro.props;
+
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
 ---
 
 <html lang="en">
@@ -22,7 +26,7 @@ const {
     <link rel="icon" type="image/svg+xml" href="/images/favicon.ico" />
     <title>{pageTitle}</title>
 
-    <link rel="canonical" href={Astro.url.href} />
+    <link rel="canonical" href={canonicalURL} />
     <meta name="description" content={sDescription} /><meta
       name="robots"
       content="index, follow"
@@ -30,10 +34,10 @@ const {
     <meta property="og:description" content={sDescription} /><meta
     <meta
       property="og:type"
-      content="article"
+      content={sType}
     /><meta property="og:image" content={sImage} /><meta
       property="og:url"
-      content={Astro.url.href}
+      content={canonicalURL}
     /><meta name="twitter:card" content={sCard} /><meta
       name="twitter:creator"
       content={sCreator}

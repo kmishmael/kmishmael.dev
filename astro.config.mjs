@@ -5,5 +5,6 @@ import metaTags from "astro-meta-tags";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), metaTags()]
+  integrations: [tailwind(), metaTags()],
+  site: 'https://kmishmael.tech'
 });
