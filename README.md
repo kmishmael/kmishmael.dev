@@ -1,10 +1,9 @@
-# Personal Portofolio
-
-Simple and responsive personal portfolio that showcases one's but not limited to experiences, education, projects, community work, profile and technical stack.
+# kmishamel.tech
+Personal website that showcases but not limited to experiences, education, projects, and my blog (ranging from software development to personal issues to things I think about before going to bed at night.)
 
 ## Developing
 
-This project is created using [`Hugo`](https://gohugo.io/), arguably the fastest static site generator framework. Using [TailwindCSS](https://tailwindcss.com/) for styling. Also, using [Gulp](https://gulpjs.com/) to watch and rebuild, and parse style files in development, and also in production.
+This project is created using [`Astro`](https://astro.build/). Using [TailwindCSS](https://tailwindcss.com/) for styling. Content is stored in markdown files that are parsed for static generation.
 
 Clone the project and installed dependencies with
 
@@ -22,3 +21,5 @@ npm run dev
 ```
 
 check `package.json` for other available script commands.
+
+
