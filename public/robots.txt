@@ -1,0 +1,5 @@
+# Hey Robots 👋, be nice
+User-agent: *
+Allow: /
+
+Sitemap: https://kmishmael.tech/sitemap-index.xml
