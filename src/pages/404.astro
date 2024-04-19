@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "404 | Kibet Ismael"
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <main
+    class="w-full px-2 min-h-screen flex-col flex justify-center items-center"
+  >
+    <img src="/images/lost-meme.gif" alt="gotem" height={300} width={300} />
+  <p class="mt-4 text-xl">
+    <span class="text-blue-600 border-r border-blue-600 pr-2">404</span><span
+      class="ml-2">Page Not Found</span
+    >
+  </p>
+  <p class="mt-4 text-sm text-neutral-700">
+    The page you were looking for doesn't exist, head to the <a
+      href="/"
+      class="text-blue-500">Homepage</a
+    >
+  </p>
+  </main>
+</BaseLayout>
