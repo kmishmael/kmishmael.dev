@@ -1,4 +1,4 @@
-# kmishamel.tech
+# kmishmael.tech
 Personal website that showcases but not limited to experiences, education, projects, and my blog (ranging from software development to personal issues to things I think about before going to bed at night.)
 
 ## Developing
