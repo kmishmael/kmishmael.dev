@@ -1,0 +1,1418 @@
+{
+  "6": [
+    "$",
+    "$16",
+    null,
+    {
+      "children": [
+        "$",
+        "$L17",
+        null,
+        {
+          "children": [
+            "$",
+            "div",
+            null,
+            {
+              "style": { "--color-category": "192 29 113" },
+              "children": [
+                [
+                  {
+                    "article": {
+                      "frontMatter": {
+                        "title": "Nvidia GeForce RTX 4070 SUPER 12GB",
+                        "deck": {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "content": [
+                                {
+                                  "data": {},
+                                  "marks": [],
+                                  "value": "The NVIDIA GeForce RTX 4070 SUPER Founders Edition is optimized for gaming at maximum settings in 1080P/1440p resolutions and is capable of handling 4K gaming at lower quality settings or with DLSS enabled. ",
+                                  "nodeType": "text"
+                                }
+                              ],
+                              "nodeType": "paragraph"
+                            }
+                          ],
+                          "nodeType": "document"
+                        },
+                        "summary": {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "content": [
+                                {
+                                  "data": {},
+                                  "marks": [],
+                                  "value": "The NVIDIA GeForce RTX 4070 SUPER Founders Edition is optimized for gaming at maximum settings in 1080P/1440p resolutions and is capable of handling 4K gaming at lower quality settings or with DLSS enabled. The RTX 4070 SUPER offers a performance level comparable to the RTX 3090, despite a modest increase in power consumption compared to the RTX 4070. Its power efficiency remains impressive for the performance offered.",
+                                  "nodeType": "text"
+                                }
+                              ],
+                              "nodeType": "paragraph"
+                            },
+                            {
+                              "data": {},
+                              "content": [
+                                {
+                                  "data": {},
+                                  "marks": [],
+                                  "value": "The updated RTX 4070 SUPER architecture presents significant performance enhancements over the RTX 4070 while maintaining similar launch pricing. It features a standard memory configuration of 12GB GDDR6X, aligning with the 4070 and 4070 Ti models. The card excels in both general and ray-tracing performance up to 1440P resolutions, making it a very strong price/performance choice for gaming.",
+                                  "nodeType": "text"
+                                }
+                              ],
+                              "nodeType": "paragraph"
+                            },
+                            {
+                              "data": {},
+                              "content": [
+                                {
+                                  "data": {},
+                                  "marks": [],
+                                  "value": "However, despite its strengths, the card is limited to (3) v1.4 DisplayPort and (1) HDMI v2.1 port. Support for DisplayPort version 2.1 or more HDMI 2.1 connections would be appreciated. ",
+                                  "nodeType": "text"
+                                }
+                              ],
+                              "nodeType": "paragraph"
+                            }
+                          ],
+                          "nodeType": "document"
+                        },
+                        "slug": "nvidia-geforce-rtx-4070-super-12gb",
+                        "category": "GPU",
+                        "publicationDate": "2024-04-05T15:45:00.000-07:00",
+                        "embargoedUntil": "2024-01-16T00:00:00.000-07:00",
+                        "author": { "name": "Onie T. ", "slugName": "onie-t" },
+                        "tags": [],
+                        "thumbnailUrl": "https://images.ctfassets.net/ucz66fbi61yq/4TZnm9DlD65ZksGwRTEzcx/bc06f326bd27351e8e83c223b31e9e99/Hero.png",
+                        "thumbnailAlt": "Hero.png",
+                        "thumbnailCaption": "",
+                        "photographer": null,
+                        "tester": {
+                          "name": "Jon D. and Nikolas H. ",
+                          "slugName": "jon-d-and-nikolas-h"
+                        }
+                      },
+                      "content": {
+                        "summary": "$1c",
+                        "content": {
+                          "product": {
+                            "manufacturer": {
+                              "name": "NVIDIA",
+                              "slugName": "nvidia"
+                            },
+                            "model": "RTX 4070 SUPER 12GB",
+                            "category": "GPU",
+                            "slug": "nvidia-rtx-4070-super-12gb",
+                            "embargoedUntil": "2024-01-31T00:00:00.000-08:00",
+                            "affiliateLinks": [
+                              {
+                                "partner": {
+                                  "name": "Newegg",
+                                  "logo": {
+                                    "url": "https://images.ctfassets.net/ucz66fbi61yq/2XCZYPJvajhlsDnoAmwMPZ/03cfb31407baf7dd4c553eab9b0624f1/NEGG_BIG.png"
+                                  }
+                                },
+                                "link": "https://lmg.gg/2fWSi"
+                              },
+                              {
+                                "partner": {
+                                  "name": "Best Buy",
+                                  "logo": {
+                                    "url": "https://images.ctfassets.net/ucz66fbi61yq/6yEYozW98QUtAsqKEV41Uk/976905a14cf5f2c76f87fc1451163349/BBY_BIG.png"
+                                  }
+                                },
+                                "link": "https://lmg.gg/jC1To"
+                              }
+                            ]
+                          },
+                          "highlights": [
+                            {
+                              "displayName": "Price-to-Performance",
+                              "value": "Great price-to-performance, launched at a starting MSRP $599 USD",
+                              "sentiment": "Positive"
+                            },
+                            {
+                              "displayName": "Game Performance",
+                              "value": "Excels at gaming for up to 1440p resolutions",
+                              "sentiment": "Positive"
+                            },
+                            {
+                              "displayName": " Design",
+                              "value": "Has a sleek, matte all-black look",
+                              "sentiment": "Neutral"
+                            },
+                            {
+                              "displayName": " Size",
+                              "value": "Small and compact but performs impressively",
+                              "sentiment": "Neutral"
+                            },
+                            {
+                              "displayName": "DisplayPort",
+                              "value": "Would like to see support for DisplayPort version 2.1",
+                              "sentiment": "Negative"
+                            }
+                          ],
+                          "sections": [
+                            {
+                              "title": "Hardware Summary",
+                              "layout": "$undefined",
+                              "content": {
+                                "benchmarkGraphs": [],
+                                "metadataAttributes": [
+                                  {
+                                    "displayName": "",
+                                    "order": "$undefined",
+                                    "value": {
+                                      "data": {},
+                                      "content": [
+                                        {
+                                          "data": {},
+                                          "content": [
+                                            {
+                                              "data": {},
+                                              "marks": [],
+                                              "value": "The RTX 4070 SUPER utilizes 5 nm process technology and incorporates the AD104 graphics processor. This allows it to support the latest and upcoming gaming titles with advanced features like hardware-ray tracing and variable-rate shading under DirectX 12 Ultimate compatibility. ",
+                                              "nodeType": "text"
+                                            }
+                                          ],
+                                          "nodeType": "paragraph"
+                                        },
+                                        {
+                                          "data": {},
+                                          "content": [
+                                            {
+                                              "data": {},
+                                              "marks": [],
+                                              "value": "Nvidia has augmented the core count of the RTX 4070 SUPER to 7168, up from 5888 in the 4070, enhancing its performance capabilities. The card features 80 ROPs (Render Output Units), 224 texture mapping units, and 56 ray-tracing acceleration cores, and maintains a TDP (Thermal Design Power) of 220W, facilitating acceleration in machine learning applications and improved graphical processing. ",
+                                              "nodeType": "text"
+                                            }
+                                          ],
+                                          "nodeType": "paragraph"
+                                        },
+                                        {
+                                          "data": {},
+                                          "content": [
+                                            {
+                                              "data": {},
+                                              "marks": [],
+                                              "value": "Its dual fan and reasonably small design will fit nicely in most computer cases. In the box it comes with the graphics card, a user guide, and a 12VHPWR to 2x 8-Pin PCIe Power Adapter. ",
+                                              "nodeType": "text"
+                                            }
+                                          ],
+                                          "nodeType": "paragraph"
+                                        }
+                                      ],
+                                      "nodeType": "document"
+                                    },
+                                    "format": "longText",
+                                    "reviewType": "GpuReview",
+                                    "override": false
+                                  }
+                                ]
+                              },
+                              "comments": "$undefined",
+                              "assets": []
+                            },
+                            {
+                              "title": "Features Software Summary",
+                              "layout": "$undefined",
+                              "content": {
+                                "benchmarkGraphs": [],
+                                "metadataAttributes": [
+                                  {
+                                    "displayName": "",
+                                    "order": "$undefined",
+                                    "value": {
+                                      "data": {},
+                                      "content": [
+                                        {
+                                          "data": {},
+                                          "content": [
+                                            {
+                                              "data": {},
+                                              "marks": [],
+                                              "value": "The RTX 4070 SUPER graphics card supports features like DirectML for enhanced performance, Adaptive Sync for tear-free gaming, and a powerful CUDA core architecture ensuring smooth graphics rendering. It also integrates NVIDIA DLSS 3 technology to improve frame rates without sacrificing visual quality. ",
+                                              "nodeType": "text"
+                                            },
+                                            {
+                                              "data": {},
+                                              "marks": [],
+                                              "value": "Overall, the RTX 4070 SUPER offers a great 1080P/1440P gaming experience with its advanced features and technologies. ",
+                                              "nodeType": "text"
+                                            }
+                                          ],
+                                          "nodeType": "paragraph"
+                                        }
+                                      ],
+                                      "nodeType": "document"
+                                    },
+                                    "format": "longText",
+                                    "reviewType": "GpuReview",
+                                    "override": false
+                                  }
+                                ]
+                              },
+                              "comments": "$undefined",
+                              "assets": []
+                            },
+                            {
+                              "title": "Performance Summary",
+                              "layout": "$undefined",
+                              "content": {
+                                "benchmarkGraphs": [],
+                                "metadataAttributes": [
+                                  {
+                                    "displayName": "",
+                                    "order": "$undefined",
+                                    "value": {
+                                      "data": {},
+                                      "content": [
+                                        {
+                                          "data": {},
+                                          "content": [
+                                            {
+                                              "data": {},
+                                              "marks": [],
+                                              "value": "The RTX 4070 SUPER graphics card provides smooth gaming experiences at 1080p and higher resolutions. In our testing, it performed consistently across different resolutions, ranking similarly to other cards at 1440p and 2160p. Overall, our tests indicated that the RTX 4070 SUPER outperforms the RTX 4070 on average but falls slightly behind the RTX 4070 Ti in terms of performance.",
+                                              "nodeType": "text"
+                                            }
+                                          ],
+                                          "nodeType": "paragraph"
+                                        }
+                                      ],
+                                      "nodeType": "document"
+                                    },
+                                    "format": "longText",
+                                    "reviewType": "GpuReview",
+                                    "override": false
+                                  }
+                                ]
+                              },
+                              "comments": "$undefined",
+                              "assets": []
+                            },
+                            {
+                              "title": "Productivity Efficiency Summary",
+                              "layout": "$undefined",
+                              "content": {
+                                "benchmarkGraphs": [],
+                                "metadataAttributes": [
+                                  {
+                                    "displayName": "",
+                                    "order": "$undefined",
+                                    "value": "$undefined",
+                                    "format": "noOp",
+                                    "reviewType": "GpuReview",
+                                    "override": false
+                                  }
+                                ]
+                              },
+                              "comments": "$undefined",
+                              "assets": []
+                            },
+                            {
+                              "title": "Test Configuration Summary",
+                              "layout": "$undefined",
+                              "content": {
+                                "benchmarkGraphs": [],
+                                "metadataAttributes": [
+                                  {
+                                    "displayName": "",
+                                    "order": "$undefined",
+                                    "value": {
+                                      "nodeType": "document",
+                                      "data": {},
+                                      "content": [
+                                        {
+                                          "nodeType": "paragraph",
+                                          "data": {},
+                                          "content": [
+                                            {
+                                              "nodeType": "text",
+                                              "value": "We will periodically retest graphics cards with updated drivers. We continuously monitor and update our results for accuracy. Stay tuned for the latest test results and insights on this product and others as we aim to provide up-to-date information on a consistent basis.",
+                                              "marks": [],
+                                              "data": {}
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "nodeType": "paragraph",
+                                          "data": {},
+                                          "content": [
+                                            {
+                                              "nodeType": "text",
+                                              "value": "We actively address test bench variance in our evaluation process. Our methodology involves validation and calibration procedures to ensure consistency and reliability across all tests. The verified testbed variance for benchmarks in this product page is +/- 0.25%. ",
+                                              "marks": [],
+                                              "data": {}
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "nodeType": "paragraph",
+                                          "data": {},
+                                          "content": [
+                                            {
+                                              "nodeType": "text",
+                                              "value": "By monitoring and controlling variables such as hardware configurations, ambient temperatures, and system settings, we minimize potential sources of variance that could affect our results. This detailed approach enables us to deliver the most objective and accurate assessments.",
+                                              "marks": [],
+                                              "data": {}
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    "format": "longText",
+                                    "reviewType": "GpuReview",
+                                    "override": false
+                                  }
+                                ]
+                              },
+                              "comments": "$undefined",
+                              "assets": []
+                            },
+                            {
+                              "title": "Tested Settings",
+                              "layout": "noAsset",
+                              "content": {
+                                "benchmarkGraphs": [],
+                                "metadataAttributes": [
+                                  {
+                                    "displayName": "Drivers",
+                                    "order": "$undefined",
+                                    "value": [
+                                      {
+                                        "displayName": "0",
+                                        "order": "$undefined",
+                                        "value": "AMD GPU Driver 23.12.1",
+                                        "format": "$undefined",
+                                        "reviewType": "GpuReview",
+                                        "override": false
+                                      },
+                                      {
+                                        "displayName": "1",
+                                        "order": "$undefined",
+                                        "value": "AMD Platform Driver 5.08.02.027",
+                                        "format": "$undefined",
+                                        "reviewType": "GpuReview",
+                                        "override": false
+                                      },
+                                      {
+                                        "displayName": "2",
+                                        "order": "$undefined",
+                                        "value": "Nvidia GPU Driver 551.22 Super Cards",
+                                        "format": "$undefined",
+                                        "reviewType": "GpuReview",
+                                        "override": false
+                                      },
+                                      {
+                                        "displayName": "3",
+                                        "order": "$undefined",
+                                        "value": "Nvidia GPU Driver 546.52 non-Super Cards",
+                                        "format": "$undefined",
+                                        "reviewType": "GpuReview",
+                                        "override": false
+                                      },
+                                      {
+                                        "displayName": "4",
+                                        "order": "$undefined",
+                                        "value": "Retesting with latest available drivers as of 28/03/2024 and will update in the near future",
+                                        "format": "$undefined",
+                                        "reviewType": "GpuReview",
+                                        "override": false
+                                      }
+                                    ],
+                                    "format": "horizontalList",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  }
+                                ]
+                              },
+                              "comments": "$undefined",
+                              "assets": []
+                            },
+                            {
+                              "title": "Supported Features",
+                              "layout": "assetLeft",
+                              "content": {
+                                "benchmarkGraphs": [],
+                                "metadataAttributes": [
+                                  {
+                                    "displayName": "Adaptive Sync",
+                                    "order": "$undefined",
+                                    "value": "G-Sync",
+                                    "format": "horizontalList",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "DirectX",
+                                    "order": "$undefined",
+                                    "value": "12 Ultimate",
+                                    "format": "presenceBoolean",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "OpenGL",
+                                    "order": "$undefined",
+                                    "value": "4.6",
+                                    "format": "presenceBoolean",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Vulkan",
+                                    "order": "$undefined",
+                                    "value": "1.3",
+                                    "format": "presenceBoolean",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Ray Tracing",
+                                    "order": "$undefined",
+                                    "value": true,
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "DirectML",
+                                    "order": "$undefined",
+                                    "value": "Yes",
+                                    "format": "presenceBoolean",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "OpenCL",
+                                    "order": "$undefined",
+                                    "value": "3",
+                                    "format": "presenceBoolean",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "CUDA",
+                                    "order": "$undefined",
+                                    "value": "Yes",
+                                    "format": "presenceBoolean",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "ReBar",
+                                    "order": "$undefined",
+                                    "value": true,
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  }
+                                ]
+                              },
+                              "comments": null,
+                              "assets": []
+                            },
+                            {
+                              "title": "Encode Decode",
+                              "layout": "assetRight",
+                              "content": {
+                                "benchmarkGraphs": [],
+                                "metadataAttributes": [
+                                  {
+                                    "displayName": "H.264",
+                                    "order": "$undefined",
+                                    "value": true,
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "H.265 (HEVC)",
+                                    "order": "$undefined",
+                                    "value": true,
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "AV1",
+                                    "order": "$undefined",
+                                    "value": true,
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "VP9",
+                                    "order": "$undefined",
+                                    "value": true,
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  }
+                                ]
+                              },
+                              "comments": null,
+                              "assets": []
+                            },
+                            {
+                              "title": "Oem Technologies",
+                              "layout": "assetLeft",
+                              "content": {
+                                "benchmarkGraphs": [],
+                                "metadataAttributes": [
+                                  {
+                                    "displayName": "Features",
+                                    "order": "$undefined",
+                                    "value": [
+                                      {
+                                        "displayName": "0",
+                                        "order": "$undefined",
+                                        "value": "NVIDIA Deep Learning Super Sampling 3 (DLSS 3)",
+                                        "format": "$undefined",
+                                        "reviewType": "GpuReview",
+                                        "override": false
+                                      },
+                                      {
+                                        "displayName": "1",
+                                        "order": "$undefined",
+                                        "value": "NVIDIA Reflex",
+                                        "format": "$undefined",
+                                        "reviewType": "GpuReview",
+                                        "override": false
+                                      },
+                                      {
+                                        "displayName": "2",
+                                        "order": "$undefined",
+                                        "value": "NVIDIA Boost",
+                                        "format": "$undefined",
+                                        "reviewType": "GpuReview",
+                                        "override": false
+                                      },
+                                      {
+                                        "displayName": "3",
+                                        "order": "$undefined",
+                                        "value": "NVIDIA Encoder (NVENC)",
+                                        "format": "$undefined",
+                                        "reviewType": "GpuReview",
+                                        "override": false
+                                      },
+                                      {
+                                        "displayName": "4",
+                                        "order": "$undefined",
+                                        "value": "NVIDIA Decoder (NVDEC)",
+                                        "format": "$undefined",
+                                        "reviewType": "GpuReview",
+                                        "override": false
+                                      }
+                                    ],
+                                    "format": "topLevelList",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  }
+                                ]
+                              },
+                              "comments": null,
+                              "assets": []
+                            },
+                            {
+                              "title": "Test Bench",
+                              "layout": "assetLeft",
+                              "content": {
+                                "benchmarkGraphs": [],
+                                "metadataAttributes": [
+                                  {
+                                    "displayName": "CPU",
+                                    "order": 0,
+                                    "value": {
+                                      "__typename": "TestBenchComponent",
+                                      "componentName": "AMD Ryzen 7 7800X3D",
+                                      "componentType": "CPU",
+                                      "productPageLink": "https://geni.us/YyfT"
+                                    },
+                                    "format": "testBenchItem",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Motherboard",
+                                    "order": 1,
+                                    "value": {
+                                      "__typename": "TestBenchComponent",
+                                      "componentName": "Gigabyte X670E AORUS XTREME",
+                                      "componentType": "Motherboard",
+                                      "productPageLink": "https://geni.us/J47zLn"
+                                    },
+                                    "format": "testBenchItem",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Memory",
+                                    "order": 2,
+                                    "value": {
+                                      "__typename": "TestBenchComponent",
+                                      "componentName": "Trident Z5 Neo RGB 6000Mhz 16GB x 2 CL30-38-38-96",
+                                      "componentType": "Memory",
+                                      "productPageLink": "https://geni.us/ZNAoL"
+                                    },
+                                    "format": "testBenchItem",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Cooling",
+                                    "order": 3,
+                                    "value": {
+                                      "__typename": "TestBenchComponent",
+                                      "componentName": "Noctua NH-D15",
+                                      "componentType": "Cooling",
+                                      "productPageLink": "https://geni.us/0NFQ"
+                                    },
+                                    "format": "testBenchItem",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Thermal Paste",
+                                    "order": 4,
+                                    "value": "Noctua NT-H2",
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Storage",
+                                    "order": 5,
+                                    "value": {
+                                      "__typename": "TestBenchComponent",
+                                      "componentName": "Samsung 980 PRO 2TB PCIe NVMe 4.0 M.2",
+                                      "componentType": "Storage",
+                                      "productPageLink": "https://geni.us/7GQHx"
+                                    },
+                                    "format": "testBenchItem",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "PSU",
+                                    "order": 6,
+                                    "value": {
+                                      "__typename": "TestBenchComponent",
+                                      "componentName": "Seasonic Prime PX-1600 ATX 3.0",
+                                      "componentType": "PSU",
+                                      "productPageLink": "https://geni.us/As5N"
+                                    },
+                                    "format": "testBenchItem",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "OS",
+                                    "order": 7,
+                                    "value": "Windows 11 23H2",
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "BIOS Version",
+                                    "order": 9,
+                                    "value": "F20",
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Monitor",
+                                    "order": 10,
+                                    "value": {
+                                      "__typename": "TestBenchComponent",
+                                      "componentName": "Sony INZONE M9 27” Gaming Monitor",
+                                      "componentType": "Monitor",
+                                      "productPageLink": "https://geni.us/VP2F0"
+                                    },
+                                    "format": "testBenchItem",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Case",
+                                    "order": 11,
+                                    "value": {
+                                      "__typename": "TestBenchComponent",
+                                      "componentName": "OBT",
+                                      "componentType": "Case",
+                                      "productPageLink": "https://lmg.gg/TmS7D"
+                                    },
+                                    "format": "testBenchItem",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Mouse",
+                                    "order": 12,
+                                    "value": {
+                                      "__typename": "TestBenchComponent",
+                                      "componentName": "Steelseries Aerox 5 Wireless",
+                                      "componentType": "Mouse",
+                                      "productPageLink": "https://geni.us/bTp41"
+                                    },
+                                    "format": "testBenchItem",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Keyboard",
+                                    "order": 13,
+                                    "value": {
+                                      "__typename": "TestBenchComponent",
+                                      "componentName": "Steelseries APEX PRO",
+                                      "componentType": "Keyboard",
+                                      "productPageLink": "https://geni.us/WvP0Z"
+                                    },
+                                    "format": "testBenchItem",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  }
+                                ]
+                              },
+                              "comments": "$undefined",
+                              "assets": []
+                            },
+                            {
+                              "title": "In The Box",
+                              "layout": "assetLeft",
+                              "content": {
+                                "benchmarkGraphs": [],
+                                "metadataAttributes": [
+                                  {
+                                    "displayName": "",
+                                    "order": "$undefined",
+                                    "value": [
+                                      {
+                                        "displayName": "0",
+                                        "order": "$undefined",
+                                        "value": "Graphics Card",
+                                        "format": "$undefined",
+                                        "reviewType": "GpuReview",
+                                        "override": false
+                                      },
+                                      {
+                                        "displayName": "1",
+                                        "order": "$undefined",
+                                        "value": "User Guide",
+                                        "format": "$undefined",
+                                        "reviewType": "GpuReview",
+                                        "override": false
+                                      },
+                                      {
+                                        "displayName": "2",
+                                        "order": "$undefined",
+                                        "value": "12VHPWR to 2x 8-Pin PCIe Power Adapter",
+                                        "format": "$undefined",
+                                        "reviewType": "GpuReview",
+                                        "override": false
+                                      }
+                                    ],
+                                    "format": "topLevelList",
+                                    "reviewType": "GpuReview",
+                                    "override": false
+                                  }
+                                ]
+                              },
+                              "comments": null,
+                              "assets": [
+                                {
+                                  "url": "https://images.ctfassets.net/ucz66fbi61yq/4qc7Eh1nJyvBCWcFx1b6PW/d01ab90810498391922978a2d24d9181/Lifestyle-Box_Card.png",
+                                  "contentType": "image/png",
+                                  "alt": "In the Box - Unboxing",
+                                  "caption": "Graphics card set on top of the box on a desk pad in front of two monitors. "
+                                },
+                                {
+                                  "url": "https://images.ctfassets.net/ucz66fbi61yq/6Eeq54ki5xyMgGCfCuvg1O/0d6a0ddd083c4331065d588d422376d3/Lifestyle-Box_Contents.png",
+                                  "contentType": "image/png",
+                                  "alt": "Box Contents ",
+                                  "caption": "The graphics card, user guide, and adapter are laid out on top of a desk pad. "
+                                }
+                              ]
+                            },
+                            {
+                              "title": "Graphics Processor",
+                              "layout": "assetRight",
+                              "content": {
+                                "benchmarkGraphs": [],
+                                "metadataAttributes": [
+                                  {
+                                    "displayName": "Architecture",
+                                    "order": "$undefined",
+                                    "value": "Lovelace",
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Processor Release Date",
+                                    "order": "$undefined",
+                                    "value": "Q1 2023",
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "GPU Chip",
+                                    "order": "$undefined",
+                                    "value": "AD104",
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Technology",
+                                    "order": "$undefined",
+                                    "value": "TSMC N5",
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Transistors",
+                                    "order": "$undefined",
+                                    "value": 35.8,
+                                    "format": "billions",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Die Size",
+                                    "order": "$undefined",
+                                    "value": 294,
+                                    "format": "areaMmSquare",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Interface",
+                                    "order": "$undefined",
+                                    "value": "PCIe 4.0 x16",
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "L1 Cache",
+                                    "order": "$undefined",
+                                    "value": 128,
+                                    "format": "dataSizeKilobytes",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "L2 Cache",
+                                    "order": "$undefined",
+                                    "value": 48,
+                                    "format": "dataSizeMegabytes",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "L3 Cache",
+                                    "order": "$undefined",
+                                    "value": "$undefined",
+                                    "format": "noOp",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  }
+                                ]
+                              },
+                              "comments": null,
+                              "assets": [
+                                {
+                                  "url": "https://images.ctfassets.net/ucz66fbi61yq/2rco785zjJ5K947QuzNzPx/16ae8a8214b8b2d37b0889713975ab68/CT_Scan-PCB_View.png",
+                                  "contentType": "image/png",
+                                  "alt": "Lumafield CT Scan - PCB View",
+                                  "caption": "CT scans were obtained using [Lumafield machines](https://lmg.gg/lumafield)."
+                                },
+                                {
+                                  "url": "https://images.ctfassets.net/ucz66fbi61yq/WdRzIRKejaQ809a4JAE29/cd2bc2d3efc02887e30c749f67848625/CT_Scan-Chip.png",
+                                  "contentType": "image/png",
+                                  "alt": "Lumafield CT Scan - Chip",
+                                  "caption": "CT scans were obtained using [Lumafield machines](https://lmg.gg/lumafield)."
+                                },
+                                {
+                                  "url": "https://images.ctfassets.net/ucz66fbi61yq/1v1riMwpavHSnr3HdtbNgt/9aed551925a6e2b3adec20abc291072a/White-Front.png",
+                                  "contentType": "image/png",
+                                  "alt": "Front of the card ",
+                                  "caption": "Front of the card with one fan. "
+                                },
+                                {
+                                  "url": "https://images.ctfassets.net/ucz66fbi61yq/2aQlzFzkGnwf4kL99OYXKn/ac2491a437774761d5edc78e1faf3b6c/White-Back.png",
+                                  "contentType": "image/png",
+                                  "alt": "Back of the card",
+                                  "caption": "Back of the card with one fan. "
+                                }
+                              ]
+                            },
+                            {
+                              "title": "Cores And Clocks",
+                              "layout": "assetLeft",
+                              "content": {
+                                "benchmarkGraphs": [],
+                                "metadataAttributes": [
+                                  {
+                                    "displayName": "Rasterization Cores",
+                                    "order": "$undefined",
+                                    "value": 7168,
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Ray Tracing Cores",
+                                    "order": "$undefined",
+                                    "value": 56,
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "AI Acceleration Cores",
+                                    "order": "$undefined",
+                                    "value": 224,
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Base Clock",
+                                    "order": "$undefined",
+                                    "value": 1980,
+                                    "format": "frequencyMegaHertz",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Boost Clock",
+                                    "order": "$undefined",
+                                    "value": 2475,
+                                    "format": "frequencyMegaHertz",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Game Clock",
+                                    "order": "$undefined",
+                                    "value": "Not Reported",
+                                    "format": "noOp",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Memory Type",
+                                    "order": "$undefined",
+                                    "value": "GDDR6X",
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Memory Size",
+                                    "order": "$undefined",
+                                    "value": 12,
+                                    "format": "dataSizeGigabytes",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Memory Data Rate",
+                                    "order": "$undefined",
+                                    "value": 21,
+                                    "format": "speedGbps",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Memory Bandwidth",
+                                    "order": "$undefined",
+                                    "value": 504.2,
+                                    "format": "speedGBs",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Memory Bus",
+                                    "order": "$undefined",
+                                    "value": 192,
+                                    "format": "dataSizeBits",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  }
+                                ]
+                              },
+                              "comments": null,
+                              "assets": []
+                            },
+                            {
+                              "title": "Board Design",
+                              "layout": "assetRight",
+                              "content": {
+                                "benchmarkGraphs": [],
+                                "metadataAttributes": [
+                                  {
+                                    "displayName": "Length",
+                                    "order": "$undefined",
+                                    "value": 267,
+                                    "format": "lengthMillimeters",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Width",
+                                    "order": "$undefined",
+                                    "value": 112,
+                                    "format": "lengthMillimeters",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Height",
+                                    "order": "$undefined",
+                                    "value": 42,
+                                    "format": "lengthMillimeters",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Slot Width",
+                                    "order": "$undefined",
+                                    "value": "Double",
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "TDP",
+                                    "order": "$undefined",
+                                    "value": 220,
+                                    "format": "powerWatts",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "HDMI",
+                                    "order": "$undefined",
+                                    "value": "1x 2.1a",
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Display Port",
+                                    "order": "$undefined",
+                                    "value": "3x 1.4a",
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Fan Size",
+                                    "order": "$undefined",
+                                    "value": 91,
+                                    "format": "lengthMillimeters",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  },
+                                  {
+                                    "displayName": "Number of Fans",
+                                    "order": "$undefined",
+                                    "value": 2,
+                                    "format": "$undefined",
+                                    "reviewType": "GpuReview",
+                                    "override": true
+                                  }
+                                ]
+                              },
+                              "comments": null,
+                              "assets": [
+                                {
+                                  "url": "https://images.ctfassets.net/ucz66fbi61yq/1KEredXsNOGTcHtX5N1E6j/d3fd81c585d64c374b36f6eb2bba4ea6/Lifestyle-BoardDesign.png",
+                                  "contentType": "image/png",
+                                  "alt": "Front of the card ",
+                                  "caption": "Front of the graphics card on a desk pad."
+                                },
+                                {
+                                  "url": "https://images.ctfassets.net/ucz66fbi61yq/30iPpF58ROxS6cfKnt5qZQ/e3668d45e4031ae3c5f57cab051d60ee/Lifestyle-Top_IO.png",
+                                  "contentType": "image/png",
+                                  "alt": "Top of the card",
+                                  "caption": "Top of the graphics card on a desk pad with the power input in the middle. "
+                                },
+                                {
+                                  "url": "https://images.ctfassets.net/ucz66fbi61yq/4CAwMtfCP4aIIbwvPS0awy/c1d9933871d3dea46d47a107d83cc510/Lifestyle-IO.png",
+                                  "contentType": "image/png",
+                                  "alt": "Side of the card - IO ",
+                                  "caption": "Side of the card with IO ports. The card has 3 DisplayPorts and 1 HDMI port. "
+                                },
+                                {
+                                  "url": "https://images.ctfassets.net/ucz66fbi61yq/210DBYs4nCE4HASWJ29z90/33c4e0b65f3a9662297c9b080c7d56ae/CT_Scan-Internals.png",
+                                  "contentType": "image/png",
+                                  "alt": "Lumafield CT Scan - Board",
+                                  "caption": "CT scans were obtained using [Lumafield machines](https://lmg.gg/lumafield)."
+                                }
+                              ]
+                            },
+                            {
+                              "title": "Gaming Performance",
+                              "layout": "assetRight",
+                              "content": {
+                                "benchmarkGraphs": [
+                                  {
+                                    "sessionIds": [
+                                      "6a7b5009-850e-41cc-965c-555060b29ad0"
+                                    ],
+                                    "graphType": "GpuGamingGamingPerformance"
+                                  }
+                                ],
+                                "metadataAttributes": []
+                              },
+                              "comments": null,
+                              "assets": []
+                            },
+                            {
+                              "title": "Ray Tracing Performance",
+                              "layout": "$undefined",
+                              "content": {
+                                "benchmarkGraphs": [
+                                  {
+                                    "sessionIds": [
+                                      "e3593091-cdad-4158-87ff-8d804b55ab63"
+                                    ],
+                                    "graphType": "GpuGamingRayTracing"
+                                  }
+                                ],
+                                "metadataAttributes": []
+                              },
+                              "comments": "$undefined",
+                              "assets": []
+                            },
+                            {
+                              "title": "Productivity",
+                              "layout": "noAsset",
+                              "content": {
+                                "benchmarkGraphs": [
+                                  {
+                                    "sessionIds": [
+                                      "0417e17f-e649-4592-9feb-ac1f7afbe0a0"
+                                    ],
+                                    "graphType": "GpuProductivityProductivity"
+                                  },
+                                  {
+                                    "sessionIds": [
+                                      "7b1cf4fb-78e2-4996-8ca5-01b23be39e44\\t"
+                                    ],
+                                    "graphType": "GpuProductivityProductivity"
+                                  }
+                                ],
+                                "metadataAttributes": []
+                              },
+                              "comments": "$undefined",
+                              "assets": []
+                            },
+                            {
+                              "title": "Synthetics",
+                              "layout": "noAsset",
+                              "content": {
+                                "benchmarkGraphs": [
+                                  {
+                                    "sessionIds": [
+                                      "cb3c3a40-d4c9-4c08-a1ef-155ca000ce37"
+                                    ],
+                                    "graphType": "GpuProductivitySynthetics"
+                                  },
+                                  {
+                                    "sessionIds": [
+                                      "e2c36c94-1baf-4a42-bf96-c6353d9b0be7"
+                                    ],
+                                    "graphType": "GpuProductivitySynthetics"
+                                  },
+                                  {
+                                    "sessionIds": [
+                                      "3c4c98f6-b583-434c-9dfd-dd51091f2eeb"
+                                    ],
+                                    "graphType": "GpuProductivitySynthetics"
+                                  },
+                                  {
+                                    "sessionIds": [
+                                      "71151d17-b0a0-410a-8ee1-c25742535cbe"
+                                    ],
+                                    "graphType": "GpuProductivitySynthetics"
+                                  },
+                                  {
+                                    "sessionIds": [
+                                      "fbf59b72-3a76-45ec-a221-3acde9016640"
+                                    ],
+                                    "graphType": "GpuProductivitySynthetics"
+                                  },
+                                  {
+                                    "sessionIds": [
+                                      "33e1a11b-5bff-4d5d-8714-55b09a08333f"
+                                    ],
+                                    "graphType": "GpuProductivitySynthetics"
+                                  },
+                                  {
+                                    "sessionIds": [
+                                      "5035e8f3-2164-4928-88cd-ea084a97f476"
+                                    ],
+                                    "graphType": "GpuProductivitySynthetics"
+                                  },
+                                  {
+                                    "sessionIds": [
+                                      "f4e3ac72-1c02-43ea-b1ee-bc11053f7acd"
+                                    ],
+                                    "graphType": "GpuProductivitySynthetics"
+                                  },
+                                  {
+                                    "sessionIds": [
+                                      "af2d6434-9632-435c-8e0b-a7fb085f92e7"
+                                    ],
+                                    "graphType": "GpuProductivitySynthetics"
+                                  }
+                                ],
+                                "metadataAttributes": []
+                              },
+                              "comments": "$undefined",
+                              "assets": []
+                            }
+                          ],
+                          "reviewType": "GpuReview",
+                          "navStructureTemplate": [
+                            {
+                              "title": "Hardware",
+                              "includedSectionTitles": [
+                                "Hardware Summary",
+                                "In The Box",
+                                "Graphics Processor",
+                                "Cores And Clocks",
+                                "Board Design"
+                              ],
+                              "sections": []
+                            },
+                            {
+                              "title": "Features & Software",
+                              "includedSectionTitles": [
+                                "Features Software Summary",
+                                "Supported Features",
+                                "Encode Decode",
+                                "Oem Technologies"
+                              ],
+                              "sections": []
+                            },
+                            {
+                              "title": "Performance",
+                              "includedSectionTitles": [
+                                "Performance Summary",
+                                "Gaming Performance",
+                                "Ray Tracing Performance"
+                              ],
+                              "sections": []
+                            },
+                            {
+                              "title": "Productivity & Efficiency",
+                              "includedSectionTitles": [
+                                "Productivity Efficiency Summary",
+                                "Productivity",
+                                "Synthetics"
+                              ],
+                              "sections": []
+                            },
+                            {
+                              "title": "Test Configuration",
+                              "includedSectionTitles": [
+                                "Test Configuration Summary",
+                                "Test Bench",
+                                "Tested Settings"
+                              ],
+                              "sections": []
+                            }
+                          ],
+                          "post": null
+                        }
+                      }
+                    }
+                  }
+                ],
+                [
+                  "$",
+                  "div",
+                  null,
+                  {
+                    "className": "labs-container pb-12",
+                    "children": [
+                      "$",
+                      "div",
+                      null,
+                      {
+                        "className": "relative flex flex-col gap-14 pt-7\\n                    lg:flex-row lg:gap-6\\n                    xl:gap-24\\n                    ",
+                        "children": [
+                          false,
+                          [
+                            "$",
+                            "div",
+                            null,
+                            {
+                              "className": "w-full",
+                              "children": [
+                                "$",
+                                "$L7",
+                                null,
+                                {
+                                  "parallelRouterKey": "children",
+                                  "segmentPath": [
+                                    "children",
+                                    "articles",
+                                    "children",
+                                    "$8",
+                                    "children",
+                                    "$31",
+                                    "children"
+                                  ],
+                                  "error": "$32",
+                                  "errorStyles": [],
+                                  "errorScripts": [],
+                                  "template": ["$", "$L9", null, {}],
+                                  "templateStyles": "$undefined",
+                                  "templateScripts": "$undefined",
+                                  "notFound": "$undefined",
+                                  "notFoundStyles": "$undefined",
+                                  "styles": null
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                ["$", "$L33", null, {}],
+                [
+                  "$",
+                  "$L34",
+                  null,
+                  {
+                    "articleSlug": "nvidia-geforce-rtx-4070-super-12gb",
+                    "category": "GPU"
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
