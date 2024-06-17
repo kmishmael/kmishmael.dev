@@ -1,5 +1,7 @@
 ---
 import Header from "../components/Header.astro";
+import { ViewTransitions } from "astro:transitions";
+
 import "../styles/global.css";
 
 const {
@@ -44,6 +46,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       name="twitter:creator"
       content={sCreator}
     />
+    <ViewTransitions />
+
 
   </head>
   <body class="">
