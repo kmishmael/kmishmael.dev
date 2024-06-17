@@ -4,60 +4,80 @@ import Introduction from "../components/Introduction.astro";
 import BlogPost from "../components/BlogPost.astro";
 const allPosts = await Astro.glob("../pages/blog/*.md");
 import { SEO } from "astro-seo";
-
+import { slide } from "astro:transitions";
 
 const pageTitle = "Home | Kibet Ismael";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-  <SEO
-  title="Kibet Ismael"
-  description="Kibet Ismael | Software Developer and Engineer."
-  openGraph={{
-    basic: {
-      title: "Kibet Ismael",
-      type: "website",
-      image: "https://kmishmael.tech/images/landing-frame.png",
-    }
-  }}
-  twitter={{
-    creator: "@kmishmael20",
-    card: 'summary_large_image'
-  }}
-  />
-  <br />
-  <Introduction />
-  <br />
-  <br />
-  <div class="grid grid-cols-12 gap-4">
-    <div class="md:col-span-8 col-span-12">
-      <div class="py-2 flex gap-4 items-center">
-        <span class="h-6 w-5 bg-primary"></span>
-        <h2 class="font-semibold text-lg m-0 text-primary">ARTICLES</h2>
-      </div>
-      <br />
+<div>
+  <BaseLayout pageTitle={pageTitle}>
+    <SEO
+      title="Kibet Ismael"
+      description="Kibet Ismael | Software Developer and Engineer."
+      openGraph={{
+        basic: {
+          title: "Kibet Ismael",
+          type: "website",
+          image: "https://kmishmael.tech/images/landing-frame.png",
+        },
+      }}
+      twitter={{
+        creator: "@kmishmael20",
+        card: "summary_large_image",
+      }}
+    />
+    <br />
+    <Introduction />
+    <br />
+    <br />
+    <div class="grid grid-cols-12 gap-4">
+      <div class="md:col-span-8 col-span-12">
+        <div class="py-2 flex gap-4 items-center">
+          <span class="h-6 w-5 bg-primary"></span>
+          <h2 class="font-semibold text-lg m-0 text-primary">ARTICLES</h2>
+        </div>
+        <br />
 
-      <ul>
-      {allPosts.slice(0, 6).map((post: any) => (
-        <BlogPost url={post.url} pubDate={post.frontmatter.pubDate} tags={post.frontmatter.tags} title={post.frontmatter.title} />
-      ))}
-      </ul>
-      <br />
-      <div>
-        <a class="text-lg hover:text-primary link-underline" href="/blog">Show all...</a>
+        <ul>
+          {
+            allPosts
+              .slice(0, 6)
+              .map((post: any) => (
+                <BlogPost
+                  url={post.url}
+                  pubDate={post.frontmatter.pubDate}
+                  tags={post.frontmatter.tags}
+                  title={post.frontmatter.title}
+                />
+              ))
+          }
+        </ul>
+        <br />
+        <div>
+          <a class="text-lg hover:text-primary link-underline" href="/blog"
+            >Show all...</a
+          >
+        </div>
       </div>
-
-    </div>
-    <div class="md:col-span-4 col-span-12">
-      <div class="py-2 flex gap-4 items-center">
-        <span class="h-4 w-3 bg-primary"></span>
-        <h2 class="font-semibold text-lg m-0 text-primary">PROJECTS</h2>
+      <div class="md:col-span-4 col-span-12">
+        <div class="py-2 flex gap-4 items-center">
+          <span class="h-4 w-3 bg-primary"></span>
+          <h2 class="font-semibold text-lg m-0 text-primary">PROJECTS</h2>
+        </div>
+        <br />
+        <ul class="flex flex-col gap-2">
+          <li>
+            <a
+              class="link-underline hover:text-primary font-semibold"
+              href="https://github.com/kmishmael/sensorgrove">SensorGrove</a>
+          </li>
+          <li>
+            <a
+              class="link-underline hover:text-primary font-semibold"
+              href="https://github.com/kmishmael/healthpal">HealthPal</a>
+          </li>
+        </ul>
       </div>
-      <br />
-      <ul class="flex flex-col gap-2">
-        <li><a class="link-underline hover:text-primary font-semibold"href="https://github.com/kmishmael/sensorgrove">SensorGrove</a></li>
-        <li><a class="link-underline hover:text-primary font-semibold"href="https://github.com/kmishmael/healthpal">HealthPal</a></li>
-      </ul>
     </div>
-  </div>
-</BaseLayout>
+  </BaseLayout>
+</div>

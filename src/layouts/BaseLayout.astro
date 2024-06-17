@@ -1,6 +1,6 @@
 ---
 import Header from "../components/Header.astro";
-import { ViewTransitions } from "astro:transitions";
+import { ViewTransitions, fade } from "astro:transitions";
 
 import "../styles/global.css";
 
@@ -50,14 +50,14 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 
   </head>
-  <body class="">
+  <body class="" transition:animate="none">
     <Header />
 
     <br />
     <div
       class="px-4 sm:px-20 md:px-36 leading-[1.5] mx-auto flex flex-col min-h-screen h-full justify-between"
     >
-      <div>
+      <div transition:animate={fade({duration: "0.5s"})}>
         <slot />
       </div>
       <div class="h-28"></div>
