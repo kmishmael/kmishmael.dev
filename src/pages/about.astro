@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { SEO } from "astro-seo";
+import { slide } from "astro:transitions";
 
 const DESIGN = [
   {
@@ -189,6 +190,8 @@ const PROJECTS = [
   },
 ];
 ---
+
+<div>
 
 <BaseLayout pageTitle="About | Kibet Ismael">
     <SEO
@@ -453,3 +456,4 @@ const PROJECTS = [
     }
   </style>
 </BaseLayout>
+</div>
