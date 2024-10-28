@@ -7,6 +7,6 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), metaTags(), sitemap()],
-  site: 'https://kmishmael.tech',
+  site: 'https://kmishmael.dev',
   trailingSlash: 'never',
 });

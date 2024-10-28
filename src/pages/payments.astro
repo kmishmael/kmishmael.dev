@@ -1,0 +1,114 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import profileImage from "../assets/kibet.jpeg";
+
+//#FAFAFA
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Options - Kibet</title>
+  </head>
+  <body>
+    <div
+      class="bg-[#111111] px-4 sm:px-20 md:px-36 leading-[1.5] mx-auto flex flex-col min-h-screen h-full justify-between"
+    >
+      <div class="container mx-auto px-4 py-12">
+        <!-- Profile Section -->
+        <div class="flex items-center justify-center mb-24 space-x-4">
+          <Image
+            width={96}
+            height={96}
+            densities={[2]}
+            format="avif"
+            src={profileImage}
+            alt="Kibet"
+            class="w-12 h-12 rounded-full object-cover border border-gray-300"
+          />
+          <div class="text-left text-[#A1A1A1]">
+            <p class="text-lg font-semibold text-[#EDEDED]">Kibet Ishmael</p>
+            <p class="text-sm text-[hsl(0,0%,63%)]">
+              Choose a payment method below to proceed with your payment
+            </p>
+          </div>
+        </div>
+        <!-- <h1 class="text-3xl font-bold text-center text-gray-800 mb-10">
+      Choose Your Payment Method
+    </h1> -->
+        <!-- Payment Options -->
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- PayPal Option -->
+          <div
+            class="rounded-lg border border-[hsla(0,0%,100%,.14)] p-8 transition duration-300"
+          >
+            <div class="mb-6 text-center">
+              <h2 class="text-2xl font-semibold text-[#EDEDED]">
+                PayPal Checkout
+              </h2>
+              <p class="text-gray-500">Pay with Card or Paypal</p>
+            </div>
+            <div class="flex flex-col items-center space-y-4 mb-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-14 w-14 text-blue-500"
+              >
+                <path
+                  d="M3.00488 2.99979H21.0049C21.5572 2.99979 22.0049 3.4475 22.0049 3.99979V19.9998C22.0049 20.5521 21.5572 20.9998 21.0049 20.9998H3.00488C2.4526 20.9998 2.00488 20.5521 2.00488 19.9998V3.99979C2.00488 3.4475 2.4526 2.99979 3.00488 2.99979ZM20.0049 10.9998H4.00488V18.9998H20.0049V10.9998ZM20.0049 8.99979V4.99979H4.00488V8.99979H20.0049ZM14.0049 14.9998H18.0049V16.9998H14.0049V14.9998Z"
+                ></path>
+              </svg>
+              <p class="font-semibold text-gray-400">Card/Paypal</p>
+              <p class="text-gray-300">
+                Credit/Debit Card (VISA, Mastercard...)
+              </p>
+            </div>
+            <div class="w-full flex justify-center items-center">
+              <a
+                href="https://www.paypal.com/ncp/payment/YGQNXFCUTPCNU"
+                class="rounded-full bg-[#EDEDED] text-[#0A0A0A] py-3 px-6 hover:bg-neutral-300 transition duration-300 font-semibold"
+              >
+                Proceed with PayPal Checkout
+              </a>
+            </div>
+          </div>
+          <!-- Intasend Option -->
+          <div
+            class="rounded-lg border border-[hsla(0,0%,100%,.14)] p-8 transition duration-300"
+          >
+            <div class="mb-6 text-center">
+              <h2 class="text-2xl font-semibold text-[#EDEDED]">Intasend</h2>
+              <p class="text-gray-500">Pay with M-Pesa or Card</p>
+            </div>
+            <div class="flex flex-col items-center space-y-4 mb-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-14 w-14 text-green-500"
+              >
+                <path
+                  d="M3.00488 2.99979H21.0049C21.5572 2.99979 22.0049 3.4475 22.0049 3.99979V19.9998C22.0049 20.5521 21.5572 20.9998 21.0049 20.9998H3.00488C2.4526 20.9998 2.00488 20.5521 2.00488 19.9998V3.99979C2.00488 3.4475 2.4526 2.99979 3.00488 2.99979ZM20.0049 10.9998H4.00488V18.9998H20.0049V10.9998ZM20.0049 8.99979V4.99979H4.00488V8.99979H20.0049ZM14.0049 14.9998H18.0049V16.9998H14.0049V14.9998Z"
+                ></path>
+              </svg>
+              <p class="font-semibold text-gray-400">Mpesa/Card</p>
+              <p class="text-gray-300">M-Pesa and Card (VISA, Mastercard...)</p>
+            </div>
+            <div class="w-full flex justify-center items-center">
+              <a
+              href="/instasend-payment"
+                class="rounded-full bg-[#EDEDED] text-[#0A0A0A] py-3 px-6 hover:bg-neutral-300 transition duration-300 font-semibold"
+              >
+                Proceed with Intasend
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
