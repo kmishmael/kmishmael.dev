@@ -1,7 +1,7 @@
 ---
 import TableOfContentsHeading from "./TableOfContentsHeading.astro";
 
-const { headings } = Astro.props
+const { headings } = Astro.props;
 const toc = buildToc(headings);
 
 function buildToc(headings) {
@@ -21,8 +21,8 @@ function buildToc(headings) {
 }
 ---
 
-<nav class="text-sm text-neutral-700">
-    <ul class="flex flex-col gap-2">
-      {toc.map((heading) => <TableOfContentsHeading heading={heading} />)}
-    </ul>
-  </nav>
+<nav class="text-sm text-black dark:text-white">
+  <ul class="flex flex-col gap-2">
+    {toc.map((heading) => <TableOfContentsHeading heading={heading} />)}
+  </ul>
+</nav>

@@ -2,9 +2,72 @@
 
 ---
 
-<div class="w-full justify-center flex flex-row gap-5 top-[5rem] left-12 m-0">
-  <a class="block text-center py-3 decoration-[none] text-lg font-medium hover:text-primary" href="/">Home</a>
-  <a class="block text-center py-3 decoration-[none] text-lg font-medium hover:text-primary" href="/blog">Blog</a>
-  <a class="block text-center py-3 decoration-[none] text-lg font-medium hover:text-primary" href="/about">About</a>
-  <a class="block text-center py-3 decoration-[none] text-lg font-medium hover:text-primary" href="/tags">Tags</a>
+<div class="hidden md:flex flex-row gap-5">
+  <a
+    class="block text-center py-2 px-3 text-black dark:text-white decoration-[none] text-lg font-medium transition-colors duration-200 relative link-underline"
+    href="/">Home</a
+  >
+  <a
+    class="block text-center py-2 px-3 text-black dark:text-white decoration-[none] text-lg font-medium transition-colors duration-200 relative link-underline"
+    href="/blog">Blog</a
+  >
+  <a
+    class="block text-center py-2 px-3 text-black dark:text-white decoration-[none] text-lg font-medium transition-colors duration-200 relative link-underline"
+    href="/about">About</a
+  >
+  <a
+    class="block text-center py-2 px-3 text-black dark:text-white decoration-[none] text-lg font-medium transition-colors duration-200 relative link-underline"
+    href="/tags">Tags</a
+  >
 </div>
+<div class="md:hidden">
+  <button id="menu-toggle" class="text-gray-800 dark:text-gray-200">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+    </svg>
+  </button>
+  <div
+    id="mobile-menu"
+    class="hidden absolute top-16 left-0 right-0 bg-white dark:bg-dark-bg shadow-md py-2 px-4 flex flex-col gap-2"
+  >
+    <a
+      class="block py-2 text-black dark:text-white hover:text-gray-900 dark:hover:text-gray-100"
+      href="/">Home</a
+    >
+    <a
+      class="block py-2 text-black dark:text-white hover:text-gray-900 dark:hover:text-gray-100"
+      href="/blog">Blog</a
+    >
+    <a
+      class="block py-2 text-black dark:text-white hover:text-gray-900 dark:hover:text-gray-100"
+      href="/about">About</a
+    >
+    <a
+      class="block py-2 text-black dark:text-white hover:text-gray-900 dark:hover:text-gray-100"
+      href="/tags">Tags</a
+    >
+  </div>
+</div>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
+  });
+</script>

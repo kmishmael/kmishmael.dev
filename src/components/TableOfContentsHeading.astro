@@ -3,12 +3,15 @@ const { heading } = Astro.props;
 ---
 
 <li>
-  <a class="hover:text-blue-600" href={"#" + heading.slug}>
+  <a
+    class="hover:text-black/70 dark:hover:text-white/70 transition-colors duration-200 block py-1 border-l-2 border-transparent hover:border-black dark:hover:border-white pl-2"
+    href={"#" + heading.slug}
+  >
     {heading.text}
   </a>
   {
     heading.subheadings.length > 0 && (
-      <ul class="ml-2">
+      <ul class="ml-3 border-l border-black/10 dark:border-white/10">
         {heading.subheadings.map((subheading) => (
           <Astro.self heading={subheading} />
         ))}
