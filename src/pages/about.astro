@@ -1,113 +1,65 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { SEO } from "astro-seo";
-import { slide } from "astro:transitions";
 
-const DESIGN = [
-  {
-    name: "Figma",
-    link: "https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white",
-  },
-  {
-    name: "Inkscape",
-    link: "https://img.shields.io/badge/Inkscape-e0e0e0?style=for-the-badge&logo=inkscape&logoColor=080A13",
-  },
-];
+const pageTitle = "About | Kibet Ismael";
 
-const FRAMEWORKS = [
-  {
-    name: "Node.js",
-    link: "https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white",
-  },
-  {
-    name: "Hugo",
-    link: "https://img.shields.io/badge/Hugo-black.svg?style=for-the-badge&logo=Hugo",
-  },
-  {
-    name: "Next.js",
-    link: "https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white",
-  },
-  {
-    name: "React",
-    link: "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
-  },
-  {
-    name: "Angular",
-    link: "https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white",
-  },
-  {
-    name: "SolidJS",
-    link: "https://img.shields.io/badge/SolidJS-2c4f7c?style=for-the-badge&logo=solid&logoColor=c8c9cb",
-  },
-  {
-    name: "TailwindCSS",
-    link: "https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white",
-  },
-  {
-    name: "Svelte",
-    link: "https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white",
-  },
-];
+const SKILLS = {
+  languages: [
+    { name: "TypeScript", level: 90 },
+    { name: "JavaScript", level: 95 },
+    { name: "Python", level: 85 },
+    { name: "Go", level: 75 },
+    { name: "C/C++", level: 70 },
+    { name: "Dart", level: 65 },
+  ],
+  frameworks: [
+    "React",
+    "Next.js",
+    "Angular",
+    "SolidJS",
+    "Svelte",
+    "TailwindCSS",
+    "Node.js",
+    "Express",
+    "Flutter",
+  ],
+  tools: [
+    "Git",
+    "Docker",
+    "Figma",
+    "VS Code",
+    "GitHub Actions",
+    "Firebase",
+    "Google Cloud",
+    "Vercel",
+    "MongoDB",
+    "PostgreSQL",
+    "Supabase",
+  ],
+};
 
-const HOSTING = [
+const EXPERIENCES = [
   {
-    name: "Firebase",
-    link: "https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase",
+    role: "Senior Frontend Developer",
+    company: "TechCorp Inc.",
+    period: "2023 - Present",
+    description:
+      "Leading frontend development for enterprise applications, mentoring junior developers, and implementing best practices across projects.",
   },
   {
-    name: "Google Cloud",
-    link: "https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white",
+    role: "Full Stack Developer",
+    company: "WebSolutions Ltd",
+    period: "2021 - 2023",
+    description:
+      "Developed and maintained full-stack web applications using React, Node.js, and MongoDB. Implemented CI/CD pipelines and improved performance metrics.",
   },
   {
-    name: "Vercel",
-    link: "https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white",
-  },
-  {
-    name: "PlanetScale",
-    link: "https://img.shields.io/badge/planetscale-%23000000.svg?style=for-the-badge&logo=planetscale&logoColor=white",
-  },
-  {
-    name: "Supabase",
-    link: "https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white",
-  },
-  {
-    name: "MongoDB",
-    link: "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white",
-  },
-  {
-    name: "Postgres",
-    link: "https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white",
-  },
-];
-
-const LANGUAGES = [
-  {
-    name: "TypeScript",
-    link: "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
-  },
-  {
-    name: "JavaScript",
-    link: "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
-  },
-  {
-    name: "Python",
-    link: "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
-  },
-  {
-    name: "Go",
-    link: "https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white",
-  },
-  {
-    name: "C",
-    link: "https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white",
-  },
-  {
-    name: "C++",
-    link: "https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white",
-  },
-  {
-    name: "Dart",
-    link: "https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white",
+    role: "Junior Developer",
+    company: "CodeStart",
+    period: "2020 - 2021",
+    description:
+      "Collaborated in agile teams to build responsive web applications and gained experience with modern JavaScript frameworks.",
   },
 ];
 
@@ -116,59 +68,54 @@ const PROJECTS = [
     link: "https://github.com/kmishmael/sensorgrove",
     image: "/images/sensorgrove.png",
     title: "SensorGrove",
-    description: "An Ecommerce platform.",
+    description:
+      "An Ecommerce platform for IoT devices and sensors with advanced filtering and real-time inventory management.",
     tags: [
       "NextJS",
-      "TailwindCS",
-      "Typescript",
+      "TailwindCSS",
+      "TypeScript",
       "Go",
       "Gin",
       "Redux",
-      "Postgres",
+      "PostgreSQL",
     ],
   },
   {
     link: "https://github.com/kmishmael/healthpal",
     image: "/images/healthpal.jpg",
     title: "HealthPal",
-    description: "Your Health and Fitness Tracker",
-    tags: ["Flask", "MYSQL", "ReactJS", "TailwindCSS", "ReactQuery"],
+    description:
+      "Comprehensive health and fitness tracking app with personalized recommendations and progress visualization.",
+    tags: ["Flask", "MySQL", "React", "TailwindCSS", "React Query"],
   },
   {
     link: "https://clemfashions.vercel.app/",
     image: "/images/clems.png",
     title: "Clems Fashion",
-    description: "Clems Fashion is an ecommerce website",
+    description:
+      "Modern ecommerce platform for fashion retail with seamless checkout and inventory management.",
     tags: [
-      "ReactJS",
-      "NextJS",
+      "React",
+      "Next.js",
       "MongoDB",
       "TailwindCSS",
-      "ReactQuery",
+      "React Query",
       "Stripe",
       "Prisma",
     ],
-  },
-  {
-    link: "#",
-    image: "/images/project3.png",
-    title: "Silicon Voyage Admin Dashboard",
-    description:
-      "Powerful tool designed to streamline content management and website administration. It empowers administrators to efficiently handle product specifications, user reviews, and overall website performance, ensuring a seamless and up-to-date user experience.",
-    tags: ["ReactJS", "NextJS", "MongoDB", "TailwindCSS", "ReactQuery"],
   },
   {
     link: "https://lecmeter.vercel.app/",
     image: "/images/lecmeter.png",
     title: "Rate My Professor",
     description:
-      "Designed to help students in evaluating their professors and offering valuable feedback through an intuitive interface, enabling students to rate professors based on teaching effectiveness, course engagement, and communication skills. Beyond numerical ratings, students can provide detailed insights, fostering a culture of constructive criticism",
+      "Platform for students to evaluate professors and provide constructive feedback through an intuitive interface.",
     tags: [
-      "ReactJS",
-      "NextJS",
+      "React",
+      "Next.js",
       "MongoDB",
       "TailwindCSS",
-      "ReactQuery",
+      "React Query",
       "Drizzle",
     ],
   },
@@ -177,283 +124,482 @@ const PROJECTS = [
     image: "/images/project2.png",
     title: "Silicon Voyage",
     description:
-      "A technology website that archives specifications for various lines of products in the Tech sector i.e CPUs, GPUs, and Smartphones",
-    tags: ["ReactJS", "NextJS", "MongoDB", "TailwindCSS", "ReactQuery"],
+      "Technology website that archives specifications for various tech products including CPUs, GPUs, and smartphones.",
+    tags: ["React", "Next.js", "MongoDB", "TailwindCSS", "React Query"],
   },
   {
     link: "https://sc-validator-kmishmael.vercel.app/twitter-validator",
     image: "/images/sc_validator.png",
-    title: "Twitter card validator",
+    title: "Twitter Card Validator",
     description:
-      "Web-based tool that allows users to input their website URLs and validate the associated Twitter cards.",
-    tags: ["ReactJS", "TailwindCSS", "Golang", "Serverless Architecture"],
+      "Web-based tool that allows users to validate Twitter cards associated with their websites.",
+    tags: ["React", "TailwindCSS", "Go", "Serverless Architecture"],
+  },
+];
+
+const EDUCATION = [
+  {
+    degree: "Bachelor of Science in Electrical and Electronics Engineering",
+    institution: "University of Nairobi",
+    period: "2020 - Present",
   },
 ];
 ---
 
-<div>
-
-<BaseLayout pageTitle="About | Kibet Ismael">
-    <SEO
-  title="Portfolio | Kibet Ismael"
-  description="Kibet Ismael | Software Developer and Engineer."
-  openGraph={{
-    basic: {
-      title: "Kibet Ismael",
-      type: "website",
-      image: "https://kmishmael.tech/images/landing-frame.png",
-    }
-  }}
-  twitter={{
-    creator: "@kmishmael20",
-    card: 'summary_large_image'
-  }}
+<BaseLayout pageTitle={pageTitle}>
+  <SEO
+    title="About | Kibet Ismael"
+    description="Software Developer with expertise in web development, engineering solutions, and creating user-friendly applications."
+    openGraph={{
+      basic: {
+        title: "About | Kibet Ismael",
+        type: "website",
+        image: "https://kmishmael.tech/images/landing-frame.png",
+      },
+    }}
+    twitter={{
+      creator: "@kmishmael20",
+      card: "summary_large_image",
+    }}
   />
-  <div class="flex flex-col sm:flex-row">
-    <div
-      class="max-sm:px-4 w-2/3 sm:w-1/5 flex mt-3 sm:mt-0 flex-row sm:flex-col items-center justify-start sm:justify-center gap-3"
-    >
-      <a
-        class="hover:fill-blue-600"
-        href="https://www.linkedin.com/in/kibet-ismael/"
-      >
-        <svg
-          class="w-6 h-6"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"
-          ></path>
-        </svg>
-      </a>
-      <a class="hover:fill-blue-600" href="https://github.com/kmishmael">
-        <svg
-          class="w-6 h-6"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
-          ></path>
-        </svg>
-      </a>
-      <a class="hover:fill-blue-600" href="https://twitter.com/kmishmael20">
-        <svg
-          class="w-6 h-6"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M22.2125 5.65605C21.4491 5.99375 20.6395 6.21555 19.8106 6.31411C20.6839 5.79132 21.3374 4.9689 21.6493 4.00005C20.8287 4.48761 19.9305 4.83077 18.9938 5.01461C18.2031 4.17106 17.098 3.69303 15.9418 3.69434C13.6326 3.69434 11.7597 5.56661 11.7597 7.87683C11.7597 8.20458 11.7973 8.52242 11.8676 8.82909C8.39047 8.65404 5.31007 6.99005 3.24678 4.45941C2.87529 5.09767 2.68005 5.82318 2.68104 6.56167C2.68104 8.01259 3.4196 9.29324 4.54149 10.043C3.87737 10.022 3.22788 9.84264 2.64718 9.51973C2.64654 9.5373 2.64654 9.55487 2.64654 9.57148C2.64654 11.5984 4.08819 13.2892 6.00199 13.6731C5.6428 13.7703 5.27232 13.8194 4.90022 13.8191C4.62997 13.8191 4.36771 13.7942 4.11279 13.7453C4.64531 15.4065 6.18886 16.6159 8.0196 16.6491C6.53813 17.8118 4.70869 18.4426 2.82543 18.4399C2.49212 18.4402 2.15909 18.4205 1.82812 18.3811C3.74004 19.6102 5.96552 20.2625 8.23842 20.2601C15.9316 20.2601 20.138 13.8875 20.138 8.36111C20.138 8.1803 20.1336 7.99886 20.1256 7.81997C20.9443 7.22845 21.651 6.49567 22.2125 5.65605Z"
-          ></path>
-        </svg>
-      </a>
-      <a class="hover:fill-blue-600" href="mailto:kmishmael@gmail.com">
-        <svg
-          class="w-6 h-6"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"
-          ></path>
-        </svg>
-      </a>
-    </div>
 
-    <div id="home" class="w-full sm:w-1/3 mt-6 max-sm:px-4">
-      <p class="text-4xl font-bold">Hello 👋</p>
-      <p class="text-7xl font-bold mt-6">I'm Kibet <span> Ismael</span></p>
-
-      <p class="text-2xl font-bold mt-6">Software Developer</p>
-
-      <p class="text-md font-normal mt-6">
-        I am a Software Developer, who is passionate about building user
-        friendly and beautiful applications on the internet
-      </p>
-
-      <!-- <div class="mt-2">
-        <a
-          href="./KIBET.pdf"
-          target="blank"
-          class="py-2 w-fit px-4 flex gap-2 hover:bg-blue-500 items-center bg-darkish text-slate-200 rounded-xl"
-        >
-          <span class="uppercase">Resume</span>
-          <svg
-            class="h-6 w-6 fill-slate-200"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M1 14.5C1 12.1716 2.22429 10.1291 4.06426 8.9812C4.56469 5.044 7.92686 2 12 2C16.0731 2 19.4353 5.044 19.9357 8.9812C21.7757 10.1291 23 12.1716 23 14.5C23 17.9216 20.3562 20.7257 17 20.9811L7 21C3.64378 20.7257 1 17.9216 1 14.5ZM16.8483 18.9868C19.1817 18.8093 21 16.8561 21 14.5C21 12.927 20.1884 11.4962 18.8771 10.6781L18.0714 10.1754L17.9517 9.23338C17.5735 6.25803 15.0288 4 12 4C8.97116 4 6.42647 6.25803 6.0483 9.23338L5.92856 10.1754L5.12288 10.6781C3.81156 11.4962 3 12.927 3 14.5C3 16.8561 4.81833 18.8093 7.1517 18.9868L7.325 19H16.675L16.8483 18.9868ZM13 12H16L12 17L8 12H11V8H13V12Z"
-            ></path>
-          </svg>
-        </a>
-      </div> -->
-    </div>
-  </div>
-
-  <div id="techstack" class="mt-28 px-4">
-    <p
-      class="text-2xl w-fit relative uppercase font-bold after:content-start after:absolute after:h-2 after:bg-gray-800 after:w-3/5 after:left-0 after:-bottom-2"
-    >
-      Tech Stack
-    </p>
-
-    <div class="py-8 sm:px-8 mt-4">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-2xl font-bold mb-4">Languages</h2>
-        <div class="flex flex-wrap mb-8">
-          {
-            LANGUAGES.map((language: any) => (
-              <img src={language.link} alt={language.name} class="m-2" />
-            ))
-          }
+  <!-- Hero Section -->
+  <section class="py-16 px-4">
+    <div class="container mx-auto">
+      <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+        <div class="w-full md:w-1/2">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">
+            Hello, I'm <span class="gradient-text">Kibet Ismael</span>
+          </h1>
+          <p class="text-xl text-gray-700 dark:text-gray-300 mb-6">
+            Software Developer & Engineering Student
+          </p>
+          <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+            I specialize in building modern, responsive web applications with a
+            focus on performance, accessibility, and user experience. With a
+            strong foundation in both frontend and backend technologies, I
+            create elegant solutions to complex problems.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="mailto:kmishmael@gmail.com"
+              class="btn px-6 py-3 bg-primary hover:bg-primary/80 text-white rounded-lg transition-colors flex items-center gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                ></path>
+              </svg>
+              Contact Me
+            </a>
+            <a
+              href="#projects"
+              class="btn px-6 py-3 bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg transition-colors flex items-center gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+              See My Work
+            </a>
+          </div>
         </div>
-
-        <h2 class="text-2xl font-bold mb-4">
-          Frameworks, Platforms, and Libraries
-        </h2>
-        <div class="flex flex-wrap mb-8">
-          {
-            FRAMEWORKS.map((framework: any) => (
-              <img src={framework.link} alt={framework.name} class="m-2" />
-            ))
-          }
+        <div class="w-full md:w-1/2 mb-8 md:mb-0">
+          <div class="relative">
+            <div
+              class="absolute -inset-4 bg-gradient-to-r from-primary/30 to-gray-400/30 rounded-lg blur-md"
+            >
+            </div>
+            <img
+              src="/images/kibet.jpeg"
+              alt="Kibet Ismael"
+              class="relative w-full h-auto rounded-lg shadow-lg object-cover aspect-square md:aspect-auto"
+            />
+          </div>
         </div>
-
-        <h2 class="text-2xl font-bold mb-4">
-          Hosting, Saas, Databases, and other Cloud Services
-        </h2>
-        <div class="flex flex-wrap mb-8">
-          {
-            HOSTING.map((hosting: any) => (
-              <img src={hosting.link} alt={hosting.name} class="m-2" />
-            ))
-          }
-        </div>
-
-        <!-- Design and prototyping section -->
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="mt-8 flex flex-col-reverse sm:flex-row items-center">
-    <!-- <div class="w-full max-sm:mt-8 sm:w-2/4 flex justify-center">
-      <div
-        class="w-[68%] py-2 max-sm:px-2 overflow-hidden border-l-4 flex justify-center items-center shadow-lg rounded-lg"
-      >
-        <img
-          class="w-[256px] h-[93%] rounded-lg object-contain"
-          src="/images/kibet_touch_grass.jpg"
-          alt="Kibet onced touch grass"
-        />
+  <!-- About Section -->
+  <section class="py-16 px-4 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-6 flex items-center">
+        <div class="h-8 w-1 bg-gradient-to-b from-primary to-gray-400 mr-3">
+        </div>
+        About Me
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+            I am a passionate Software Developer with three years of experience
+            building fully functional web and mobile applications. My journey in
+            tech has led me to gain proficiency in various technologies
+            including TypeScript, Python, JavaScript, Next.js, React, and more.
+          </p>
+          <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+            My approach to development emphasizes clean code, intuitive user
+            interfaces, and scalable architectures. I'm constantly learning and
+            improving my skills to stay current with the latest technologies and
+            best practices in the industry.
+          </p>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            Currently, I'm pursuing a Bachelor's Degree in Electrical and
+            Electronics Engineering at the University of Nairobi, which
+            complements my software development skills with a strong foundation
+            in engineering principles.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Education</h3>
+          {
+            EDUCATION.map((edu) => (
+              <div class="mb-6 p-4 bg-white dark:bg-dark-card rounded-lg shadow-sm">
+                <h4 class="font-bold text-lg">{edu.degree}</h4>
+                <p class="text-primary font-medium">{edu.institution}</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm">
+                  {edu.period}
+                </p>
+              </div>
+            ))
+          }
+
+          <h3 class="text-xl font-bold mb-4 mt-8">Connect With Me</h3>
+          <div class="flex gap-4">
+            <a
+              href="https://www.linkedin.com/in/kibet-ismael/"
+              target="_blank"
+              class="p-3 bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors"
+            >
+              <svg
+                class="w-6 h-6 text-black dark:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://github.com/kmishmael"
+              target="_blank"
+              class="p-3 bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors"
+            >
+              <svg
+                class="w-6 h-6 text-black dark:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com/kmishmael20"
+              target="_blank"
+              class="p-3 bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors"
+            >
+              <svg
+                class="w-6 h-6 text-black dark:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M22.2125 5.65605C21.4491 5.99375 20.6395 6.21555 19.8106 6.31411C20.6839 5.79132 21.3374 4.9689 21.6493 4.00005C20.8287 4.48761 19.9305 4.83077 18.9938 5.01461C18.2031 4.17106 17.098 3.69303 15.9418 3.69434C13.6326 3.69434 11.7597 5.56661 11.7597 7.87683C11.7597 8.20458 11.7973 8.52242 11.8676 8.82909C8.39047 8.65404 5.31007 6.99005 3.24678 4.45941C2.87529 5.09767 2.68005 5.82318 2.68104 6.56167C2.68104 8.01259 3.4196 9.29324 4.54149 10.043C3.87737 10.022 3.22788 9.84264 2.64718 9.51973C2.64654 9.5373 2.64654 9.55487 2.64654 9.57148C2.64654 11.5984 4.08819 13.2892 6.00199 13.6731C5.6428 13.7703 5.27232 13.8194 4.90022 13.8191C4.62997 13.8191 4.36771 13.7942 4.11279 13.7453C4.64531 15.4065 6.18886 16.6159 8.0196 16.6491C6.53813 17.8118 4.70869 18.4426 2.82543 18.4399C2.49212 18.4402 2.15909 18.4205 1.82812 18.3811C3.74004 19.6102 5.96552 20.2625 8.23842 20.2601C15.9316 20.2601 20.138 13.8875 20.138 8.36111C20.138 8.1803 20.1336 7.99886 20.1256 7.81997C20.9443 7.22845 21.651 6.49567 22.2125 5.65605Z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="mailto:kmishmael@gmail.com"
+              class="p-3 bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors"
+            >
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-    </div> -->
-
-    <div class="w-full px-4">
-      <h2 class="about w-fit text-3xl font-semibold">ABOUT</h2>
-      <style>
-        .about {
-          position: relative;
-        }
-        .about::after {
-          content: "";
-          position: absolute;
-          height: 6px;
-          width: 60%;
-          bottom: -10px;
-          left: 0;
-          background-color: black;
-        }
-      </style>
-      <p class="mt-6 text-lg">
-        I am a Software Developer, with three years experience in building fully
-        fledged and functional web and mobile applications. Over the years, I
-        have acquired profiency in TypeScript, Python, Javascript, NextJS,
-        ReactJS, Angular, Solid Start, CSS, TailwindCSS and other libraries. My
-        love for learning has driven me to acquire more skills to build
-        applications that solve problems and make life easy for others. I also
-        have experience in integrating RESTful APIs, using Git for version
-        control. I am passionate about creating user-friendly web applications
-        that meet the needs of users while delivering a seamless experience. I
-        am a quick learner, adaptable, and always eager to improve my skills. I
-        am currently persuing a Bachelors Degree in Electrical and Electronics
-        Engineering at the University Of Nairobi.
-      </p>
     </div>
-  </div>
+  </section>
 
-  <div id="portfolio" class="mt-12">
-    <h2 class="project w-fit text-2xl font-semibold uppercase">Projects</h2>
+  <!-- Skills Section -->
+  <section class="py-16 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-12 flex items-center">
+        <div class="h-8 w-1 bg-gradient-to-b from-primary to-gray-400 mr-3">
+        </div>
+        Skills & Expertise
+      </h2>
 
-    <!-- <p class="text-2xl underline font-bold text-slate-500">
-        0{index + 1}
-    </p>
-     -->
-    {
-      PROJECTS.map((project: any, index: number) => (
-        <>
-          <div class="mt-10"></div>
-          <div class="flex border-b-2 border-neutral-400 py-3 flex-col sm:flex-row flex-wrap mt-4 sm:mt-8 justify-between {{ if mod (add $index 1) 2 }}sm:flex-row-reverse{{ end }}">
-            <div class="w-full sm:w-3/5 mb-4">
-              <div class="flex flex-col relative rounded overflow-hidden shadow-lg">
-                <a
-                  href={project.link}
-                  class="absolute w-full rounded transition-all duration-200 ease-in h-full"
-                />
-                <a href={project.link}>
-                  <img class="object-fit rounded" src={project.image} />
-                </a>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Languages -->
+        <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm">
+          <div class="flex items-center mb-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-primary mr-3"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+            </svg>
+            <h3 class="text-2xl font-bold">Languages</h3>
+          </div>
+          <div class="space-y-4">
+            {
+              SKILLS.languages.map((lang) => (
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">{lang.name}</span>
+                    <span class="text-sm text-gray-500">{lang.level}%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-primary to-gray-400 h-2 rounded-full"
+                      style={`width: ${lang.level}%`}
+                    />
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm">
+          <div class="flex items-center mb-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-primary mr-3"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+              ></path>
+            </svg>
+            <h3 class="text-2xl font-bold">Frameworks</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            {
+              SKILLS.frameworks.map((framework) => (
+                <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm">
+                  {framework}
+                </span>
+              ))
+            }
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm">
+          <div class="flex items-center mb-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-primary mr-3"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+              ></path>
+            </svg>
+            <h3 class="text-2xl font-bold">Tools & Services</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            {
+              SKILLS.tools.map((tool) => (
+                <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm">
+                  {tool}
+                </span>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="py-16 px-4 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-12 flex items-center">
+        <div class="h-8 w-1 bg-gradient-to-b from-primary to-gray-400 mr-3">
+        </div>
+        Work Experience
+      </h2>
+
+      <div class="relative border-l-2 border-primary pl-8 ml-4">
+        {
+          EXPERIENCES.map((exp, index) => (
+            <div class="mb-12 relative">
+              <div class="absolute -left-[42px] bg-white dark:bg-gray-900 p-1 rounded-full border-4 border-primary">
+                <div class="w-4 h-4 bg-primary rounded-full" />
+              </div>
+              <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-bold">{exp.role}</h3>
+                <p class="text-primary font-medium">{exp.company}</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm mb-4">
+                  {exp.period}
+                </p>
+                <p class="text-gray-600 dark:text-gray-300">
+                  {exp.description}
+                </p>
               </div>
             </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
 
-            <div class="flex flex-col w-full sm:w-2/5 sm:px-4 justify-center gap-3">
-              <div class="h-fit bg-navy p-4 rounded-md">
-                <p class="uppercase font-bold text-lg">{project.title}</p>
-                <p class="text-sm">{project.description}</p>
-                <div>
-                  <ul class="flex gap-2 font-semibold w-full flex-wrap py-2">
-                    {project.tags.map((tag: any) => (
-                      <li class="cursor-pointer px-2 bg-blue-100 rounded-sm hover:text-blue-700 text-sm">
-                        {tag}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div class="w-full py-2 flex">
-                  <a target="_blank" href={project.link}>
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-12 flex items-center">
+        <div class="h-8 w-1 bg-gradient-to-b from-primary to-gray-400 mr-3">
+        </div>
+        Featured Projects
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          PROJECTS.map((project) => (
+            <div class="bg-white dark:bg-dark-card rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow hover:-translate-y-1 hover-lift">
+              <div class="relative aspect-video overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    class="text-white font-medium flex items-center"
+                  >
+                    View Project
                     <svg
-                      class="h-6 w-6 fill-slate-600 hover:fill-blue-600 transition-[fill] duration-200 ease-in hover:fill-neon ml-auto"
                       xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 ml-1"
+                      fill="none"
                       viewBox="0 0 24 24"
+                      stroke="currentColor"
                     >
-                      <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z" />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
                     </svg>
                   </a>
                 </div>
               </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">{project.title}</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm line-clamp-2">
+                  {project.description}
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  {project.tags.slice(0, 4).map((tag) => (
+                    <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-xs">
+                      {tag}
+                    </span>
+                  ))}
+                  {project.tags.length > 4 && (
+                    <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-xs">
+                      +{project.tags.length - 4} more
+                    </span>
+                  )}
+                </div>
+              </div>
             </div>
-          </div>
-        </>
-      ))
-    }
-  </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
 
-  <style>
-    .project {
-      position: relative;
-    }
-    .project::after {
-      content: "";
-      position: absolute;
-      height: 6px;
-      width: 60%;
-      bottom: -10px;
-      left: 0;
-      background-color: black;
-    }
-  </style>
+  <!-- Contact CTA -->
+  <section class="py-16 px-4">
+    <div class="container mx-auto">
+      <div
+        class="bg-gradient-to-r from-primary/20 to-gray-300/20 dark:from-primary/10 dark:to-gray-700/10 p-8 md:p-12 rounded-2xl text-center"
+      >
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Work Together?
+        </h2>
+        <p
+          class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto"
+        >
+          I'm always interested in new opportunities and collaborations. Feel
+          free to reach out if you have a project in mind!
+        </p>
+        <a
+          href="mailto:kmishmael@gmail.com"
+          class="inline-block px-8 py-4 bg-primary hover:bg-primary/80 text-white rounded-lg transition-colors text-lg font-medium"
+        >
+          Get In Touch
+        </a>
+      </div>
+    </div>
+  </section>
 </BaseLayout>
-</div>
+
+<style>
+  /* Add any custom styles here */
+  .hover-lift {
+    transition: all 0.3s ease;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

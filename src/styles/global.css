@@ -1,3 +1,42 @@
+/* Using system fonts defined in tailwind config */
+
+:root {
+  --transition-duration: 0.3s;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --primary-color: #000000;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --card-background: #ffffff;
+  --border-color: #eaeaea;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.dark {
+  color-scheme: dark;
+  --primary-color: #ffffff;
+  --background-color: #000000;
+  --text-color: #ffffff;
+  --card-background: #111111;
+  --border-color: #333333;
+}
+
+html.light {
+  color-scheme: light;
+  --primary-color: #000000;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --card-background: #fafafa;
+  --border-color: #eaeaea;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
 .link-underline {
   transition: color 0.25s ease-in;
   display: inline-block;
@@ -14,7 +53,7 @@
   left: 0;
   transform-origin: bottom left right;
   transition: transform 0.25s ease-out;
-  @apply bg-primary
+  background-color: var(--text-color);
 }
 
 .link-underline:hover::after {
