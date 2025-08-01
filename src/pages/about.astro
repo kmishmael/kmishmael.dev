@@ -225,7 +225,7 @@ const EDUCATION = [
         <div class="w-full md:w-1/2 mb-8 md:mb-0">
           <div class="relative">
             <div
-              class="absolute -inset-4 bg-gradient-to-r from-primary/30 to-gray-400/30 rounded-lg blur-md"
+              class="absolute -inset-4 bg-linear-to-r from-primary/30 to-gray-400/30 rounded-lg blur-md"
             >
             </div>
             <img
@@ -243,8 +243,7 @@ const EDUCATION = [
   <section class="py-16 px-4 bg-gray-50 dark:bg-gray-900">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold mb-6 flex items-center">
-        <div class="h-8 w-1 bg-gradient-to-b from-primary to-gray-400 mr-3">
-        </div>
+        <div class="h-8 w-1 bg-linear-to-b from-primary to-gray-400 mr-3"></div>
         About Me
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -272,7 +271,7 @@ const EDUCATION = [
           <h3 class="text-xl font-bold mb-4">Education</h3>
           {
             EDUCATION.map((edu) => (
-              <div class="mb-6 p-4 bg-white dark:bg-dark-card rounded-lg shadow-sm">
+              <div class="mb-6 p-4 bg-white dark:bg-dark-card rounded-lg shadow-xs">
                 <h4 class="font-bold text-lg">{edu.degree}</h4>
                 <p class="text-primary font-medium">{edu.institution}</p>
                 <p class="text-gray-500 dark:text-gray-400 text-sm">
@@ -356,14 +355,13 @@ const EDUCATION = [
   <section class="py-16 px-4">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold mb-12 flex items-center">
-        <div class="h-8 w-1 bg-gradient-to-b from-primary to-gray-400 mr-3">
-        </div>
+        <div class="h-8 w-1 bg-linear-to-b from-primary to-gray-400 mr-3"></div>
         Skills & Expertise
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         <!-- Languages -->
-        <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm">
+        <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-xs">
           <div class="flex items-center mb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -390,7 +388,7 @@ const EDUCATION = [
                   </div>
                   <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                     <div
-                      class="bg-gradient-to-r from-primary to-gray-400 h-2 rounded-full"
+                      class="bg-linear-to-r from-primary to-gray-400 h-2 rounded-full"
                       style={`width: ${lang.level}%`}
                     />
                   </div>
@@ -401,7 +399,7 @@ const EDUCATION = [
         </div>
 
         <!-- Frameworks -->
-        <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm">
+        <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-xs">
           <div class="flex items-center mb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -431,7 +429,7 @@ const EDUCATION = [
         </div>
 
         <!-- Tools -->
-        <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm">
+        <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-xs">
           <div class="flex items-center mb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -467,8 +465,7 @@ const EDUCATION = [
   <section class="py-16 px-4 bg-gray-50 dark:bg-gray-900">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold mb-12 flex items-center">
-        <div class="h-8 w-1 bg-gradient-to-b from-primary to-gray-400 mr-3">
-        </div>
+        <div class="h-8 w-1 bg-linear-to-b from-primary to-gray-400 mr-3"></div>
         Work Experience
       </h2>
 
@@ -479,7 +476,7 @@ const EDUCATION = [
               <div class="absolute -left-[42px] bg-white dark:bg-gray-900 p-1 rounded-full border-4 border-primary">
                 <div class="w-4 h-4 bg-primary rounded-full" />
               </div>
-              <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+              <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-xs hover:shadow-md transition-shadow">
                 <h3 class="text-xl font-bold">{exp.role}</h3>
                 <p class="text-primary font-medium">{exp.company}</p>
                 <p class="text-gray-500 dark:text-gray-400 text-sm mb-4">
@@ -500,22 +497,21 @@ const EDUCATION = [
   <section id="projects" class="py-16 px-4">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold mb-12 flex items-center">
-        <div class="h-8 w-1 bg-gradient-to-b from-primary to-gray-400 mr-3">
-        </div>
+        <div class="h-8 w-1 bg-linear-to-b from-primary to-gray-400 mr-3"></div>
         Featured Projects
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {
           PROJECTS.map((project) => (
-            <div class="bg-white dark:bg-dark-card rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow hover:-translate-y-1 hover-lift">
+            <div class="bg-white dark:bg-dark-card rounded-xl overflow-hidden shadow-xs hover:shadow-lg transition-shadow-smhover:-translate-y-1 hover-lift">
               <div class="relative aspect-video overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
                   class="w-full h-full object-cover"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
+                <div class="absolute inset-0 bg-linear-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
                   <a
                     href={project.link}
                     target="_blank"
@@ -568,7 +564,7 @@ const EDUCATION = [
   <section class="py-16 px-4">
     <div class="container mx-auto">
       <div
-        class="bg-gradient-to-r from-primary/20 to-gray-300/20 dark:from-primary/10 dark:to-gray-700/10 p-8 md:p-12 rounded-2xl text-center"
+        class="bg-linear-to-r from-primary/20 to-gray-300/20 dark:from-primary/10 dark:to-gray-700/10 p-8 md:p-12 rounded-2xl text-center"
       >
         <h2 class="text-3xl md:text-4xl font-bold mb-6">
           Ready to Work Together?

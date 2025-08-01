@@ -1,4 +1,49 @@
-/* Using system fonts defined in tailwind config */
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-primary: #000000;
+  --color-light-grey: #eaeaea;
+  --color-dark-grey: #666666;
+  --color-primary2: #fafafa;
+  --color-secondary: #f1f1f1;
+
+  --color-dark-bg: #000000;
+  --color-dark-card: #111111;
+  --color-dark-text: #ffffff;
+
+  --color-light-bg: #ffffff;
+  --color-light-card: #fafafa;
+  --color-light-text: #000000;
+}
+.hover-lift {
+  transition-property: all;
+  transition-duration: 300ms;
+  &:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.08);
+  }
+}
+.gradient-text {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #000000, #000000);
+}
+.dark .gradient-text {
+  background-image: linear-gradient(to right, #ffffff, #ffffff);
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border: 1px solid #eaeaea;
+  transition-property: all;
+  transition-duration: 300ms;
+}
+.dark .card {
+  background-color: #111111;
+  border-color: #333333;
+}
 
 :root {
   --transition-duration: 0.3s;

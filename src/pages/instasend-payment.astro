@@ -15,7 +15,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           id="email"
           name="email"
           required
-          class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-black bg-gray-100"
+          class="w-full p-3 border border-gray-300 rounded-xsfocus:outline-none focus:border-black bg-gray-100"
         />
       </div>
       <div>
@@ -25,7 +25,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           id="first-name"
           name="first-name"
           required
-          class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-black bg-gray-100"
+          class="w-full p-3 border border-gray-300 rounded-xsfocus:outline-none focus:border-black bg-gray-100"
         />
       </div>
       <div>
@@ -35,7 +35,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           id="last-name"
           name="last-name"
           required
-          class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-black bg-gray-100"
+          class="w-full p-3 border border-gray-300 rounded-xsfocus:outline-none focus:border-black bg-gray-100"
         />
       </div>
       <div>
@@ -45,12 +45,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           id="amount"
           name="amount"
           required
-          class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-black bg-gray-100"
+          class="w-full p-3 border border-gray-300 rounded-xsfocus:outline-none focus:border-black bg-gray-100"
         />
       </div>
       <button
         type="submit"
-        class="w-full bg-black text-white py-3 rounded font-semibold hover:bg-gray-800 transition"
+        class="w-full bg-black text-white py-3 rounded-xsfont-semibold hover:bg-gray-800 transition"
       >
         Submit Payment
       </button>
@@ -64,10 +64,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     ?.addEventListener("submit", async (e) => {
       e.preventDefault();
 
-      const email = (document.getElementById("email") as HTMLInputElement).value;
-      const firstName = (document.getElementById("first-name") as HTMLInputElement).value;
-      const lastName = (document.getElementById("last-name") as HTMLInputElement).value;
-      const amount = (document.getElementById("amount") as HTMLInputElement).value;
+      const email = (document.getElementById("email") as HTMLInputElement)
+        .value;
+      const firstName = (
+        document.getElementById("first-name") as HTMLInputElement
+      ).value;
+      const lastName = (
+        document.getElementById("last-name") as HTMLInputElement
+      ).value;
+      const amount = (document.getElementById("amount") as HTMLInputElement)
+        .value;
 
       try {
         const response = await fetch(
