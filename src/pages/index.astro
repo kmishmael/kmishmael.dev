@@ -2,11 +2,14 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Introduction from "../components/Introduction.astro";
 import BlogPost from "../components/BlogPost.astro";
-const allPosts = await Astro.glob("../pages/blog/*.md");
 import { SEO } from "astro-seo";
 import { slide } from "astro:transitions";
+import { getCollection } from "astro:content";
 
 const pageTitle = "Home | Kibet Ismael";
+
+const allPosts = await getCollection("blog");
+console.log(allPosts);
 ---
 
 <div>
@@ -41,12 +44,12 @@ const pageTitle = "Home | Kibet Ismael";
           {
             allPosts
               .slice(0, 6)
-              .map((post: any) => (
+              .map((post) => (
                 <BlogPost
-                  url={post.url}
-                  pubDate={post.frontmatter.pubDate}
-                  tags={post.frontmatter.tags}
-                  title={post.frontmatter.title}
+                  slug={post.data.slug}
+                  publishDate={post.data.publishDate}
+                  tags={post.data.tags}
+                  title={post.data.title}
                 />
               ))
           }

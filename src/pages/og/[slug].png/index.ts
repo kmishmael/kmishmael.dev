@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { ImageResponse } from '@vercel/og';
-
+import { getCollection } from 'astro:content';
 
 interface Props {
     params: { slug: string };
@@ -34,7 +34,7 @@ export async function GET({ params, props }) {
                                         color: 'white',
                                         fontFamily: 'DM Sans Bold',
                                     },
-                                    children: props.frontmatter.title,
+                                    children: props.data.title,
                                 },
                             },
                         ],
@@ -53,11 +53,11 @@ export async function GET({ params, props }) {
                                         color: 'white',
                                         fontFamily: 'DM Sans Bold',
                                     },
-                                    children: new Date(props.frontmatter.pubDate).toLocaleDateString("en-US", {
+                                    children: new Date(props.data.publishDate).toLocaleDateString("en-US", {
                                         year: "numeric",
                                         month: "long",
                                         day: "2-digit",
-                                      }),
+                                    }),
                                 },
                             },
                         ],
@@ -67,7 +67,7 @@ export async function GET({ params, props }) {
             tw: 'w-full h-full flex items-center relative',
             style: {
                 fontFamily: 'DM Sans Regular',
-                backgroundImage: 'url(https://kmishmael.tech/images/og-background.png)',
+                backgroundImage: 'url(https://kmishmael.dev/images/og-background.png)',
             },
         },
     };
@@ -93,13 +93,12 @@ export async function GET({ params, props }) {
 
 export async function getStaticPaths() {
 
-    // @ts-expect-error
-    const blogPosts = import.meta.glob("../../blog/*.md");
+    const blogPosts = await getCollection('blog');
     let posts: any[] = []
     for (let path of Object.keys(blogPosts)) {
         let b = await blogPosts[path]()
         let post = {
-            params: {slug: b.url.split('/')[b.url.split('/').length - 1]},
+            params: { slug: b.url.split('/')[b.url.split('/').length - 1] },
             props: b,
         }
         posts.push(post)

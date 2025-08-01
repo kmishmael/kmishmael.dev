@@ -74,7 +74,7 @@ const { frontmatter, headings, url } = Astro.props;
                 ></path>
               </svg>
               {
-                new Date(frontmatter.pubDate).toLocaleDateString("en-US", {
+                new Date(frontmatter.publishDate).toLocaleDateString("en-US", {
                   year: "numeric",
                   month: "long",
                   day: "2-digit",

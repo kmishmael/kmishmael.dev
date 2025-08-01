@@ -1,10 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
-const allPosts = await Astro.glob("../pages/blog/*.md");
-const pageTitle = "Blog | Kibet Ismael";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("blog");
+
 import { SEO } from "astro-seo";
 import { slide } from "astro:transitions";
+const pageTitle = "Blog | Kibet Ismael";
 ---
 
 <div>
@@ -50,13 +53,12 @@ import { slide } from "astro:transitions";
 
       <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
         {
-          allPosts.map((post) => (
+          allPosts.map((post: any) => (
             <BlogPost
-              mediaTransitionName={`media-image-${post.url}`}
-              url={post.url}
-              pubDate={post.frontmatter.pubDate}
-              tags={post.frontmatter.tags}
-              title={post.frontmatter.title}
+              slug={post.data.slug}
+              publishDate={post.data.publishDate}
+              tags={post.data.tags}
+              title={post.data.title}
             />
           ))
         }

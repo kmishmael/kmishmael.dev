@@ -2,16 +2,17 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import BlogPost from "../../components/BlogPost.astro";
 import { SEO } from "astro-seo";
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const allPosts: any = await Astro.glob("../blog/*.md");
+  const allPosts = await getCollection("blog");
   const uniqueTags = [
-    ...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat()),
+    ...new Set(allPosts.map((post: any) => post.data.tags).flat()),
   ];
 
   return uniqueTags.map((tag) => {
     const filteredPosts = allPosts.filter((post: any) =>
-      post.frontmatter.tags.includes(tag)
+      post.data.tags.includes(tag)
     );
     return {
       params: { tag },
@@ -54,10 +55,10 @@ const { posts } = Astro.props;
     {
       posts.map((post: any) => (
         <BlogPost
-          url={post.url}
-          title={post.frontmatter.title}
-          pubDate={post.frontmatter.pubDate}
-          tags={post.frontmatter.tags}
+          slug={post.data.slug}
+          title={post.data.title}
+          publishDate={post.data.publishDate}
+          tags={post.data.tags}
         />
       ))
     }
