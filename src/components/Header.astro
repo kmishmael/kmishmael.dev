@@ -1,26 +1,42 @@
 ---
 import Hamburger from "./Hamburger.astro";
 import Navigation from "./Navigation.astro";
-import ThemeToggle from "./ThemeToggle.astro";
 ---
 
 <header class="h-20 relative">
-  <nav
-    class="sticky top-0 z-100 w-full transition-colors duration-300  backdrop-blur-lg border-b border-gray-200 dark:border-neutral-800"
-  >
+  <nav class="z-100 w-full transition-colors duration-300">
     <div
       class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3 sm:px-8"
     >
-      <a href="/" class="text-2xl font-bold">
-        <span class="gradient-text">KM</span><span
-          class="hidden md:inline text-black dark:text-white">ishmael</span
+      <a href="/" class="flex w-full items-center justify-center md:w-auto font-inter">
+        <svg
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          class="w-8 h-8 stroke-black dark:stroke-white"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
         >
+          <path
+            d="M10.2887 43.1603L5.57735 35L10.2887 26.8397H19.7113L24.4227 35L19.7113 43.1603H10.2887Z"
+          ></path>
+          <path
+            d="M28.2887 33.1603L23.5774 25L28.2887 16.8397H37.7113L42.4227 25L37.7113 33.1603H28.2887Z"
+          ></path>
+          <path
+            d="M10.2887 22.1603L5.57735 14L10.2887 5.83974H19.7113L24.4227 14L19.7113 22.1603H10.2887Z"
+          ></path>
+        </svg>
+
+        <div
+          class="ml-2 flex-none text-sm font-medium uppercase md:hidden lg:block"
+        >
+          KMISHMAEL
+        </div>
       </a>
       <div class="flex items-center">
         <Navigation />
-        <div class="ml-4">
-          <ThemeToggle />
-        </div>
+      
       </div>
     </div>
   </nav>

@@ -3,6 +3,7 @@
 
 @theme inline {
   --font-sans: var(--font-ginto);
+  --font-inter: 'Inter', sans-serif;
 }
 
 @theme {
