@@ -1,5 +1,5 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Layout from "../layouts/Layout.astro";
 import { SEO } from "astro-seo";
 
 const pageTitle = "About | Kibet Ismael";
@@ -146,7 +146,7 @@ const EDUCATION = [
 ];
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle}>
   <SEO
     title="About | Kibet Ismael"
     description="Software Developer with expertise in web development, engineering solutions, and creating user-friendly applications."
@@ -584,7 +584,7 @@ const EDUCATION = [
       </div>
     </div>
   </section>
-</BaseLayout>
+</Layout>
 
 <style>
   /* Add any custom styles here */

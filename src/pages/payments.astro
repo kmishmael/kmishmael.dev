@@ -1,5 +1,5 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import profileImage from "../assets/kibet.jpeg";
 
@@ -41,7 +41,6 @@ import profileImage from "../assets/kibet.jpeg";
     </h1> -->
         <!-- Payment Options -->
         <div class="grid md:grid-cols-2 gap-10">
-          
           <!-- Intasend Option -->
           <div
             class="rounded-lg border border-[hsla(0,0%,100%,.14)] p-8 transition duration-300"
@@ -66,11 +65,11 @@ import profileImage from "../assets/kibet.jpeg";
             </div>
             <div class="w-full flex justify-center items-center">
               <a
-              href="/instasend-payment"
+                href="/instasend-payment"
                 class="rounded-full bg-[#EDEDED] text-[#0A0A0A] py-3 px-6 hover:bg-neutral-300 transition duration-300 font-semibold"
               >
                 Proceed with Intasend
-            </a>
+              </a>
             </div>
           </div>
           <!-- PayPal Option -->

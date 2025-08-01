@@ -1,18 +1,17 @@
 ---
 import TableOfContents from "../components/TableOfContents.astro";
-import { SEO } from "astro-seo";
 
-import BaseLayout from "./BaseLayout.astro";
+import Layout from "./Layout.astro";
 const { frontmatter, headings, url } = Astro.props;
 ---
 
 <div transition:name=`media-image-${url}`>
-  <BaseLayout
+  <Layout
     pageTitle=`${frontmatter.title} | Kibet Ismael`
-    sImage=`https://kmishmael.tech/og/${url.split('/')[url.split('/').length - 1]}.png`
-    sType="article"
-    sDescription={frontmatter.description}
-    sTitle=`${frontmatter.title} | Kibet Ismael`
+    image=`https://kmishmael.tech/og/${url.split('/')[url.split('/').length - 1]}.png`
+    type="article"
+    description={frontmatter.description}
+    title=`${frontmatter.title} | Kibet Ismael`
   >
     <div class="relative">
       <div
@@ -215,5 +214,5 @@ const { frontmatter, headings, url } = Astro.props;
         </div>
       </article>
     </div>
-  </BaseLayout>
+  </Layout>
 </div>

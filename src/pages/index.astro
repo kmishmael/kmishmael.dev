@@ -1,5 +1,5 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Layout from "../layouts/Layout.astro";
 import Introduction from "../components/Introduction.astro";
 import BlogPost from "../components/BlogPost.astro";
 import { SEO } from "astro-seo";
@@ -9,11 +9,10 @@ import { getCollection } from "astro:content";
 const pageTitle = "Home | Kibet Ismael";
 
 const allPosts = await getCollection("blog");
-console.log(allPosts);
 ---
 
 <div>
-  <BaseLayout pageTitle={pageTitle}>
+  <Layout pageTitle={pageTitle}>
     <SEO
       title="Kibet Ismael"
       description="Kibet Ismael | Software Developer and Engineer."
@@ -47,7 +46,7 @@ console.log(allPosts);
               .map((post) => (
                 <BlogPost
                   slug={post.data.slug}
-                  publishDate={post.data.publishDate}
+                  publishDate={post.data.publishDate.toISOString()}
                   tags={post.data.tags}
                   title={post.data.title}
                 />
@@ -161,5 +160,5 @@ console.log(allPosts);
         </div>
       </div>
     </div>
-  </BaseLayout>
+  </Layout>
 </div>

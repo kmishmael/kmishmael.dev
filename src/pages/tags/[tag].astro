@@ -1,5 +1,5 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import Layout from "../../layouts/Layout.astro";
 import BlogPost from "../../components/BlogPost.astro";
 import { SEO } from "astro-seo";
 import { getCollection } from "astro:content";
@@ -25,7 +25,7 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
 
-<BaseLayout pageTitle=`${tag} | Kibet Ismael`>
+<Layout pageTitle=`${tag} | Kibet Ismael`>
   <SEO
     title=`${tag}`
     description="Kibet Ismael | Software Developer and Engineer."
@@ -37,7 +37,6 @@ const { posts } = Astro.props;
       },
     }}
     twitter={{
-      creator: "@kmishmael20",
       card: "summary_large_image",
     }}
   />
@@ -63,4 +62,4 @@ const { posts } = Astro.props;
       ))
     }
   </ul>
-</BaseLayout>
+</Layout>

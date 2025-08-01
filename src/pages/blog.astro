@@ -1,5 +1,5 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Layout from "../layouts/Layout.astro";
 import BlogPost from "../components/BlogPost.astro";
 import { getCollection } from "astro:content";
 
@@ -11,10 +11,10 @@ const pageTitle = "Blog | Kibet Ismael";
 ---
 
 <div>
-  <BaseLayout
+  <Layout
     pageTitle={pageTitle}
-    sTitle="Kibet Ismael"
-    sDescription="Kibet Ismael | Software Developer and Engineer."
+    title="Kibet Ismael"
+    description="Kibet Ismael | Software Developer and Engineer."
   >
     <div class="py-8 flex flex-col gap-4 items-start">
       <div class="flex items-center mb-6">
@@ -64,5 +64,5 @@ const pageTitle = "Blog | Kibet Ismael";
         }
       </ul>
     </div>
-  </BaseLayout>
+  </Layout>
 </div>

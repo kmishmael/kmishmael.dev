@@ -1,8 +1,12 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@theme inline {
+  --font-sans: var(--font-ginto);
+}
+
 @theme {
-  --color-primary: #000000;
+  /* --color-primary: #000000;
   --color-light-grey: #eaeaea;
   --color-dark-grey: #666666;
   --color-primary2: #fafafa;
@@ -14,8 +18,9 @@
 
   --color-light-bg: #ffffff;
   --color-light-card: #fafafa;
-  --color-light-text: #000000;
+  --color-light-text: #000000; */
 }
+/* 
 .hover-lift {
   transition-property: all;
   transition-duration: 300ms;
@@ -43,16 +48,16 @@
 .dark .card {
   background-color: #111111;
   border-color: #333333;
-}
+} */
 
 :root {
-  --transition-duration: 0.3s;
+  /* --transition-duration: 0.3s;
   --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
   --primary-color: #000000;
   --background-color: #ffffff;
   --text-color: #000000;
   --card-background: #ffffff;
-  --border-color: #eaeaea;
+  --border-color: #eaeaea; */
 }
 
 html {
@@ -61,26 +66,22 @@ html {
 
 html.dark {
   color-scheme: dark;
-  --primary-color: #ffffff;
-  --background-color: #000000;
-  --text-color: #ffffff;
-  --card-background: #111111;
-  --border-color: #333333;
+  /* --primary-color: #ffffff; */
+  /* --background-color: #000000;
+  --text-color: #ffffff; */
+  /* --card-background: #111111;
+  --border-color: #333333; */
 }
 
 html.light {
   color-scheme: light;
   --primary-color: #000000;
-  --background-color: #ffffff;
-  --text-color: #000000;
+  /* --background-color: #ffffff;
+  --text-color: #000000; */
   --card-background: #fafafa;
   --border-color: #eaeaea;
 }
 
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
 
 .link-underline {
   transition: color 0.25s ease-in;
